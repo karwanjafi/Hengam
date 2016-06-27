@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPaysOfTeacherInterval" targetNamespace="http://tempuri.org/dsPaysOfTeacherInterval.xsd" xmlns:mstns="http://tempuri.org/dsPaysOfTeacherInterval.xsd" xmlns="http://tempuri.org/dsPaysOfTeacherInterval.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HengamConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HengamConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Hengam.Properties.Settings.GlobalReference.Default.HengamConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPaysOfTeacherInterval" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPaysOfTeacherInterval" msprop:Generator_DataSetName="dsPaysOfTeacherInterval" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="viwReportPaysOfTeacherInterval" msprop:Generator_UserTableName="viwReportPaysOfTeacherInterval" msprop:Generator_RowDeletedName="viwReportPaysOfTeacherIntervalRowDeleted" msprop:Generator_RowChangedName="viwReportPaysOfTeacherIntervalRowChanged" msprop:Generator_RowClassName="viwReportPaysOfTeacherIntervalRow" msprop:Generator_RowChangingName="viwReportPaysOfTeacherIntervalRowChanging" msprop:Generator_RowEvArgName="viwReportPaysOfTeacherIntervalRowChangeEvent" msprop:Generator_RowEvHandlerName="viwReportPaysOfTeacherIntervalRowChangeEventHandler" msprop:Generator_TableClassName="viwReportPaysOfTeacherIntervalDataTable" msprop:Generator_TableVarName="tableviwReportPaysOfTeacherInterval" msprop:Generator_RowDeletingName="viwReportPaysOfTeacherIntervalRowDeleting" msprop:Generator_TablePropName="viwReportPaysOfTeacherInterval">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="payID" msprop:Generator_UserColumnName="payID" msprop:Generator_ColumnVarNameInTable="columnpayID" msprop:Generator_ColumnPropNameInRow="payID" msprop:Generator_ColumnPropNameInTable="payIDColumn" type="xs:int" />
+              <xs:element name="payDate" msprop:Generator_UserColumnName="payDate" msprop:Generator_ColumnVarNameInTable="columnpayDate" msprop:Generator_ColumnPropNameInRow="payDate" msprop:Generator_ColumnPropNameInTable="payDateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="className" msprop:Generator_UserColumnName="className" msprop:Generator_ColumnVarNameInTable="columnclassName" msprop:Generator_ColumnPropNameInRow="className" msprop:Generator_ColumnPropNameInTable="classNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="600" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fee" msprop:Generator_UserColumnName="fee" msprop:Generator_ColumnVarNameInTable="columnfee" msprop:Generator_ColumnPropNameInRow="fee" msprop:Generator_ColumnPropNameInTable="feeColumn" type="xs:int" />
+              <xs:element name="employeeName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="employeeName" msprop:Generator_ColumnVarNameInTable="columnemployeeName" msprop:Generator_ColumnPropNameInRow="employeeName" msprop:Generator_ColumnPropNameInTable="employeeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="teacherID" msprop:Generator_UserColumnName="teacherID" msprop:Generator_ColumnVarNameInTable="columnteacherID" msprop:Generator_ColumnPropNameInRow="teacherID" msprop:Generator_ColumnPropNameInTable="teacherIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="teacherName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="teacherName" msprop:Generator_ColumnVarNameInTable="columnteacherName" msprop:Generator_ColumnPropNameInRow="teacherName" msprop:Generator_ColumnPropNameInTable="teacherNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

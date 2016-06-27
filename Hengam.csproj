@@ -1,0 +1,1732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{533D40A5-0ABA-49A4-AE85-AA09918E45DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hengam</RootNamespace>
+    <AssemblyName>Hengam</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ManifestCertificateThumbprint>00194135B5320B531347EDD2CCAAAC30DA486CB5</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Hengam_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+    <PublishUrl>d:\HengamPack\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Animations, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AddOnDlls\Animations.dll</HintPath>
+    </Reference>
+    <Reference Include="CoolMenu, Version=1.0.1341.19824, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AddOnDlls\CoolMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="CoolTitleBar, Version=1.0.2692.12234, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AddOnDlls\CoolTitleBar.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.CommonControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportAppServer.CommonObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CustomControls, Version=1.0.2775.19974, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AddOnDlls\CustomControls.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendedPictureBoxLib, Version=1.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AddOnDlls\ExtendedPictureBoxLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Resources, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AddOnDlls\FarsiLibrary.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AddOnDlls\FarsiLibrary.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AddOnDlls\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabStrip, Version=2.0.2523.29272, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AddOnDlls\TabStrip.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.0.2649.16786, Culture=neutral, PublicKeyToken=d481317c817cec47, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AddOnDlls\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="XPExplorerBar, Version=3.3.0.0, Culture=neutral, PublicKeyToken=26272737b5f33015">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AddOnDlls\XPExplorerBar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ActivitySelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ActivitySelector.Designer.cs">
+      <DependentUpon>ActivitySelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HengamAnimatedButtonSmall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\HengamAnimatedButtonSmall.Designer.cs">
+      <DependentUpon>HengamAnimatedButtonSmall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NextTabber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NextTabber.Designer.cs">
+      <DependentUpon>NextTabber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Class\frmClassSessionStatusSetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Class\frmClassSessionStatusSetter.Designer.cs">
+      <DependentUpon>frmClassSessionStatusSetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmActivityManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmActivityManager.Designer.cs">
+      <DependentUpon>frmActivityManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDesktopUserManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDesktopUserManager.Designer.cs">
+      <DependentUpon>frmDesktopUserManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInternetUpdater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInternetUpdater.Designer.cs">
+      <DependentUpon>frmInternetUpdater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTimeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTimeManager.Designer.cs">
+      <DependentUpon>frmTimeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmComboManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmComboManager.Designer.cs">
+      <DependentUpon>frmComboManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmTeacherTimePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmTeacherTimePicker.Designer.cs">
+      <DependentUpon>frmTeacherTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentFinancialDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentFinancialDetails.Designer.cs">
+      <DependentUpon>frmStudentFinancialDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentFinancialStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentFinancialStatus.Designer.cs">
+      <DependentUpon>frmStudentFinancialStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentSessionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentSessionDetails.Designer.cs">
+      <DependentUpon>frmStudentSessionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherFinancialStatusAggregatedPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherFinancialStatusAggregatedPay.Designer.cs">
+      <DependentUpon>frmTeacherFinancialStatusAggregatedPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherClassBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherClassBalance.Designer.cs">
+      <DependentUpon>frmTeacherClassBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherFinancialDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherFinancialDetails.Designer.cs">
+      <DependentUpon>frmTeacherFinancialDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherSessionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherSessionDetails.Designer.cs">
+      <DependentUpon>frmTeacherSessionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherFinancialStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherFinancialStatus.Designer.cs">
+      <DependentUpon>frmTeacherFinancialStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherPayForClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherPayForClass.Designer.cs">
+      <DependentUpon>frmTeacherPayForClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsViwRptSessionsOfTeacher3months.cs">
+      <DependentUpon>dsViwRptSessionsOfTeacher3months.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsViwRptSessionsOfTeacher3months.Designer.cs">
+      <DependentUpon>dsViwRptSessionsOfTeacher3months.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsEmployeeInformation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeeInformation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsEmployeePayFactor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmployeePayFactor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsIncomeInterval.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsIncomeInterval.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsRegisteredStudentsPerEmployee.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRegisteredStudentsPerEmployee.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsSchoolSpecification.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSchoolSpecification.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsStudentPayFactor.cs">
+      <DependentUpon>dsStudentPayFactor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsStudentPayFactor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsStudentPayFactor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsStudentsOfPublicClass.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsStudentsOfPublicClass.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsTeacherInformation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTeacherInformation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsTeacherPayFactor.cs">
+      <DependentUpon>dsTeacherPayFactor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsTeacherPayFactor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTeacherPayFactor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsTypcialOutcomeYear.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTypcialOutcomeYear.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsViwRptClassesOfTeacherInterval.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsViwRptClassesOfTeacherInterval.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsViwRptMinistryReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsViwRptMinistryReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsViwRptRegisterationStudentFactor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsViwRptRegisterationStudentFactor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsViwRptSessionsOfTeacherInterval.cs">
+      <DependentUpon>dsViwRptSessionsOfTeacherInterval.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsViwRptSessionsOfTeacherInterval.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsViwRptSessionsOfTeacherInterval.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportSessionsOfTeacher3months.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportSessionsOfTeacher3months.Designer.cs">
+      <DependentUpon>frmReportSessionsOfTeacher3months.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportStudentsOfPublicClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportStudentsOfPublicClass.Designer.cs">
+      <DependentUpon>frmReportStudentsOfPublicClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportEmployeePayFactor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportEmployeePayFactor.Designer.cs">
+      <DependentUpon>frmReportEmployeePayFactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportTeacherPayFactor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportTeacherPayFactor.Designer.cs">
+      <DependentUpon>frmReportTeacherPayFactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportRegisteredStudentsPerEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportRegisteredStudentsPerEmployee.Designer.cs">
+      <DependentUpon>frmReportRegisteredStudentsPerEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportIncomeInterval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportIncomeInterval.Designer.cs">
+      <DependentUpon>frmReportIncomeInterval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportTypicalOutcomeYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportTypicalOutcomeYear.Designer.cs">
+      <DependentUpon>frmReportTypicalOutcomeYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportStudentPayFactor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportStudentPayFactor.Designer.cs">
+      <DependentUpon>frmReportStudentPayFactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmMinistryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmMinistryReport.Designer.cs">
+      <DependentUpon>frmMinistryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportClassesOfTeacherInterval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportClassesOfTeacherInterval.Designer.cs">
+      <DependentUpon>frmReportClassesOfTeacherInterval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportSessionsOfTeacherInterval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportSessionsOfTeacherInterval.Designer.cs">
+      <DependentUpon>frmReportSessionsOfTeacherInterval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportPaysOfTeacherInterval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportPaysOfTeacherInterval.Designer.cs">
+      <DependentUpon>frmReportPaysOfTeacherInterval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSchoolSpecification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSchoolSpecification.Designer.cs">
+      <DependentUpon>frmSchoolSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsPaysOfTeacherInterval.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPaysOfTeacherInterval.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsViwRptStudentListOfMajor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsViwRptStudentListOfMajor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportStudentListOfMajor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportForms\frmReportStudentListOfMajor.Designer.cs">
+      <DependentUpon>frmReportStudentListOfMajor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\BaseReports\rptHeaderArmA5.cs">
+      <DependentUpon>rptHeaderArmA5.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\BaseReports\rptSamplePaperA5.cs">
+      <DependentUpon>rptSamplePaperA5.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\BaseReports\rptHeaderBackgroundA5.cs">
+      <DependentUpon>rptHeaderBackgroundA5.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\BaseReports\rptHeaderArmWide.cs">
+      <DependentUpon>rptHeaderArmWide.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\BaseReports\rptHeaderBackgroundWide.cs">
+      <DependentUpon>rptHeaderBackgroundWide.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\BaseReports\rptSamplePaperWide.cs">
+      <DependentUpon>rptSamplePaperWide.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\BaseReports\rptSamplePaper.cs">
+      <DependentUpon>rptSamplePaper.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptSessionsOfTeacher3months.cs">
+      <DependentUpon>rptSessionsOfTeacher3months.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptEmployeeInformation.cs">
+      <DependentUpon>rptEmployeeInformation.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptStudentsOfPublicClass.cs">
+      <DependentUpon>rptStudentsOfPublicClass.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptTeacherInformation.cs">
+      <DependentUpon>rptTeacherInformation.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptEmployeePayFactor.cs">
+      <DependentUpon>rptEmployeePayFactor.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\BaseReports\rptFooterA5.cs">
+      <DependentUpon>rptFooterA5.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\BaseReports\rptFooterWide.cs">
+      <DependentUpon>rptFooterWide.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptPaysOfTeacherInterval.cs">
+      <DependentUpon>rptPaysOfTeacherInterval.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptRegisterationStudentFactor.cs">
+      <DependentUpon>rptRegisterationStudentFactor.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptClassesOfTeacherInterval.cs">
+      <DependentUpon>rptClassesOfTeacherInterval.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptMinistryReport.cs">
+      <DependentUpon>rptMinistryReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptIncomeInterval.cs">
+      <DependentUpon>rptIncomeInterval.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptRegisteredStudentsPerEmployee.cs">
+      <DependentUpon>rptRegisteredStudentsPerEmployee.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptTeacherPayFactor.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTeacherPayFactor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptTypicalOutcomeYear.cs">
+      <DependentUpon>rptTypicalOutcomeYear.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptStudentPayFactor.cs">
+      <DependentUpon>rptStudentPayFactor.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptSessionsOfTeacherInterval.cs">
+      <DependentUpon>rptSessionsOfTeacherInterval.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptStudentListOfMajor.cs">
+      <DependentUpon>rptStudentListOfMajor.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Tools\ActivityManager.cs" />
+    <Compile Include="Controls\HengamAnimatedButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\HengamAnimatedButton.Designer.cs">
+      <DependentUpon>HengamAnimatedButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimeBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TimeBox.Designer.cs">
+      <DependentUpon>TimeBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\BusinessClasses.cs" />
+    <Compile Include="Database\DatabaseSchema.cs" />
+    <Compile Include="Database\DataClasses.cs" />
+    <Compile Include="Forms\frmEmployeeSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeSalary.Designer.cs">
+      <DependentUpon>frmEmployeeSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Class\Public\frmPresenceManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Class\Public\frmPresenceManager.Designer.cs">
+      <DependentUpon>frmPresenceManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Class\Private\frmClassManagerPrivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Class\Private\frmClassManagerPrivate.Designer.cs">
+      <DependentUpon>frmClassManagerPrivate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Class\Public\frmClassManagerPublic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Class\Public\frmClassManagerPublic.Designer.cs">
+      <DependentUpon>frmClassManagerPublic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReportViewer.Designer.cs">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentAffairs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentAffairs.Designer.cs">
+      <DependentUpon>frmStudentAffairs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemViewers\frmIncomeViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemViewers\frmIncomeViewer.Designer.cs">
+      <DependentUpon>frmIncomeViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentPayForClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentPayForClass.Designer.cs">
+      <DependentUpon>frmStudentPayForClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentClassBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentClassBalance.Designer.cs">
+      <DependentUpon>frmStudentClassBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Class\frmClassSessionScheduleSetter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Class\frmClassSessionScheduleSetter.Designer.cs">
+      <DependentUpon>frmClassSessionScheduleSetter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmIncomeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmIncomeManager.Designer.cs">
+      <DependentUpon>frmIncomeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Class\frmClassManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Class\frmClassManager.Designer.cs">
+      <DependentUpon>frmClassManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOutcomeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOutcomeManager.Designer.cs">
+      <DependentUpon>frmOutcomeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Class\frmClassDailyStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Class\frmClassDailyStatus.Designer.cs">
+      <DependentUpon>frmClassDailyStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentRegisterationManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentRegisterationManager.Designer.cs">
+      <DependentUpon>frmStudentRegisterationManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmMajorTeacherManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmMajorTeacherManager.Designer.cs">
+      <DependentUpon>frmMajorTeacherManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teacher\frmTeacherManager.Designer.cs">
+      <DependentUpon>frmTeacherManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGuarantorManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGuarantorManager.Designer.cs">
+      <DependentUpon>frmGuarantorManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeManager.Designer.cs">
+      <DependentUpon>frmEmployeeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmChangePassword.designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDBSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDBSettings.designer.cs">
+      <DependentUpon>frmDBSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSplash.designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Student\frmStudentManager.Designer.cs">
+      <DependentUpon>frmStudentManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmStuffPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmStuffPicker.Designer.cs">
+      <DependentUpon>frmStuffPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmSessionPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmSessionPicker.Designer.cs">
+      <DependentUpon>frmSessionPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmEmployeePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmEmployeePicker.Designer.cs">
+      <DependentUpon>frmEmployeePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmClassPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmClassPicker.Designer.cs">
+      <DependentUpon>frmClassPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmGuarantorPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmGuarantorPicker.Designer.cs">
+      <DependentUpon>frmGuarantorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmStudentPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmStudentPicker.Designer.cs">
+      <DependentUpon>frmStudentPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmTeacherPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemPickers\frmTeacherPicker.Designer.cs">
+      <DependentUpon>frmTeacherPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ItemViewers\frmOutcomeViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ItemViewers\frmOutcomeViewer.Designer.cs">
+      <DependentUpon>frmOutcomeViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Store\frmShopSellItemManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Store\frmShopSellItemManager.Designer.cs">
+      <DependentUpon>frmShopSellItemManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Store\frmShopSellItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Store\frmShopSellItem.Designer.cs">
+      <DependentUpon>frmShopSellItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Store\frmStoreSalesTracking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Store\frmStoreSalesTracking.Designer.cs">
+      <DependentUpon>frmStoreSalesTracking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Store\frmStoreShopHistoryViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Store\frmStoreShopHistoryViewer.Designer.cs">
+      <DependentUpon>frmStoreShopHistoryViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Store\frmStoreStuffBuyManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Store\frmStoreStuffBuyManager.Designer.cs">
+      <DependentUpon>frmStoreStuffBuyManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Store\frmStoreStuffDetailsAvailableViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Store\frmStoreStuffDetailsAvailableViewer.Designer.cs">
+      <DependentUpon>frmStoreStuffDetailsAvailableViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Store\frmStoreStuffTypeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Store\frmStoreStuffTypeManager.Designer.cs">
+      <DependentUpon>frmStoreStuffTypeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Store\ObjectPanel\StuffPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Store\ObjectPanel\StuffPanel.Designer.cs">
+      <DependentUpon>StuffPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Store\frmStoreAffairs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Store\frmStoreAffairs.Designer.cs">
+      <DependentUpon>frmStoreAffairs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\ActivitySelector.resx">
+      <DependentUpon>ActivitySelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HengamAnimatedButtonSmall.resx">
+      <DependentUpon>HengamAnimatedButtonSmall.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HengamAnimatedButton.resx">
+      <DependentUpon>HengamAnimatedButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NextTabber.resx">
+      <DependentUpon>NextTabber.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TimeBox.resx">
+      <DependentUpon>TimeBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Class\frmClassSessionStatusSetter.resx">
+      <DependentUpon>frmClassSessionStatusSetter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmActivityManager.resx">
+      <DependentUpon>frmActivityManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDesktopUserManager.resx">
+      <DependentUpon>frmDesktopUserManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInternetUpdater.resx">
+      <DependentUpon>frmInternetUpdater.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTimeManager.resx">
+      <DependentUpon>frmTimeManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmComboManager.resx">
+      <DependentUpon>frmComboManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEmployeeSalary.resx">
+      <DependentUpon>frmEmployeeSalary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Class\Public\frmPresenceManager.resx">
+      <DependentUpon>frmPresenceManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Class\Private\frmClassManagerPrivate.resx">
+      <DependentUpon>frmClassManagerPrivate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Class\Public\frmClassManagerPublic.resx">
+      <DependentUpon>frmClassManagerPublic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemPickers\frmTeacherTimePicker.resx">
+      <DependentUpon>frmTeacherTimePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Student\frmStudentFinancialDetails.resx">
+      <DependentUpon>frmStudentFinancialDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Student\frmStudentFinancialStatus.resx">
+      <DependentUpon>frmStudentFinancialStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Student\frmStudentSessionDetails.resx">
+      <DependentUpon>frmStudentSessionDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\frmTeacherFinancialStatusAggregatedPay.resx">
+      <DependentUpon>frmTeacherFinancialStatusAggregatedPay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\frmTeacherClassBalance.resx">
+      <DependentUpon>frmTeacherClassBalance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\frmTeacherFinancialDetails.resx">
+      <DependentUpon>frmTeacherFinancialDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\frmTeacherSessionDetails.resx">
+      <DependentUpon>frmTeacherSessionDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\frmTeacherFinancialStatus.resx">
+      <DependentUpon>frmTeacherFinancialStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\frmTeacherPayForClass.resx">
+      <DependentUpon>frmTeacherPayForClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmReportSessionsOfTeacher3months.resx">
+      <DependentUpon>frmReportSessionsOfTeacher3months.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmReportStudentsOfPublicClass.resx">
+      <DependentUpon>frmReportStudentsOfPublicClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmReportEmployeePayFactor.resx">
+      <DependentUpon>frmReportEmployeePayFactor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmReportTeacherPayFactor.resx">
+      <DependentUpon>frmReportTeacherPayFactor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmReportRegisteredStudentsPerEmployee.resx">
+      <DependentUpon>frmReportRegisteredStudentsPerEmployee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmReportIncomeInterval.resx">
+      <DependentUpon>frmReportIncomeInterval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmReportTypicalOutcomeYear.resx">
+      <DependentUpon>frmReportTypicalOutcomeYear.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmReportStudentPayFactor.resx">
+      <DependentUpon>frmReportStudentPayFactor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmMinistryReport.resx">
+      <DependentUpon>frmMinistryReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmReportClassesOfTeacherInterval.resx">
+      <DependentUpon>frmReportClassesOfTeacherInterval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmReportSessionsOfTeacherInterval.resx">
+      <DependentUpon>frmReportSessionsOfTeacherInterval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmReportPaysOfTeacherInterval.resx">
+      <DependentUpon>frmReportPaysOfTeacherInterval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSchoolSpecification.resx">
+      <DependentUpon>frmSchoolSpecification.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Student\frmStudentAffairs.resx">
+      <DependentUpon>frmStudentAffairs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemViewers\frmIncomeViewer.resx">
+      <DependentUpon>frmIncomeViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Student\frmStudentPayForClass.resx">
+      <DependentUpon>frmStudentPayForClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Student\frmStudentClassBalance.resx">
+      <DependentUpon>frmStudentClassBalance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Class\frmClassSessionScheduleSetter.resx">
+      <DependentUpon>frmClassSessionScheduleSetter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmIncomeManager.resx">
+      <DependentUpon>frmIncomeManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Class\frmClassManager.resx">
+      <DependentUpon>frmClassManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmOutcomeManager.resx">
+      <DependentUpon>frmOutcomeManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Class\frmClassDailyStatus.resx">
+      <DependentUpon>frmClassDailyStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Student\frmStudentRegisterationManager.resx">
+      <DependentUpon>frmStudentRegisterationManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\frmMajorTeacherManager.resx">
+      <DependentUpon>frmMajorTeacherManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teacher\frmTeacherManager.resx">
+      <DependentUpon>frmTeacherManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmGuarantorManager.resx">
+      <DependentUpon>frmGuarantorManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEmployeeManager.resx">
+      <DependentUpon>frmEmployeeManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDBSettings.resx">
+      <DependentUpon>frmDBSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Student\frmStudentManager.resx">
+      <DependentUpon>frmStudentManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemPickers\frmStuffPicker.resx">
+      <DependentUpon>frmStuffPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemPickers\frmSessionPicker.resx">
+      <DependentUpon>frmSessionPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemPickers\frmEmployeePicker.resx">
+      <DependentUpon>frmEmployeePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemPickers\frmClassPicker.resx">
+      <DependentUpon>frmClassPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemPickers\frmGuarantorPicker.resx">
+      <DependentUpon>frmGuarantorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemPickers\frmStudentPicker.resx">
+      <DependentUpon>frmStudentPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemPickers\frmTeacherPicker.resx">
+      <DependentUpon>frmTeacherPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ItemViewers\frmOutcomeViewer.resx">
+      <DependentUpon>frmOutcomeViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Store\frmShopSellItemManager.resx">
+      <DependentUpon>frmShopSellItemManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Store\frmShopSellItem.resx">
+      <DependentUpon>frmShopSellItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Store\frmStoreSalesTracking.resx">
+      <DependentUpon>frmStoreSalesTracking.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Store\frmStoreShopHistoryViewer.resx">
+      <DependentUpon>frmStoreShopHistoryViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Store\frmStoreStuffBuyManager.resx">
+      <DependentUpon>frmStoreStuffBuyManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Store\frmStoreStuffDetailsAvailableViewer.resx">
+      <DependentUpon>frmStoreStuffDetailsAvailableViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Store\frmStoreStuffTypeManager.resx">
+      <DependentUpon>frmStoreStuffTypeManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Store\ObjectPanel\StuffPanel.resx">
+      <DependentUpon>StuffPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Store\frmStoreAffairs.resx">
+      <DependentUpon>frmStoreAffairs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportForms\frmReportStudentListOfMajor.resx">
+      <DependentUpon>frmReportStudentListOfMajor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\BaseReports\rptHeaderArmA5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHeaderArmA5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\BaseReports\rptSamplePaperA5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSamplePaperA5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\BaseReports\rptHeaderBackgroundA5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHeaderBackgroundA5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\BaseReports\rptFooter.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptFooter.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\BaseReports\rptHeaderArm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHeaderArm.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\BaseReports\rptHeaderBackground.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHeaderBackground.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\BaseReports\rptHeaderArmWide.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHeaderArmWide.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\BaseReports\rptHeaderBackgroundWide.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptHeaderBackgroundWide.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\BaseReports\rptSamplePaperWide.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSamplePaperWide.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\BaseReports\rptSamplePaper.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSamplePaper.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptSessionsOfTeacher3months.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSessionsOfTeacher3months.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptEmployeeInformation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmployeeInformation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptStudentsOfPublicClass.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStudentsOfPublicClass.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptTeacherInformation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTeacherInformation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptEmployeePayFactor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptEmployeePayFactor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\BaseReports\rptFooterA5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptFooterA5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\BaseReports\rptFooterWide.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptFooterWide.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptPaysOfTeacherInterval.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptPaysOfTeacherInterval.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptRegisterationStudentFactor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRegisterationStudentFactor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptClassesOfTeacherInterval.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptClassesOfTeacherInterval.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptMinistryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptMinistryReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptIncomeInterval.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptIncomeInterval.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptRegisteredStudentsPerEmployee.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRegisteredStudentsPerEmployee.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptTeacherPayFactor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTeacherPayFactor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptTypicalOutcomeYear.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTypicalOutcomeYear.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptStudentPayFactor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStudentPayFactor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptSessionsOfTeacherInterval.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSessionsOfTeacherInterval.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptStudentInformation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStudentInformation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPapers\rptStudentListOfMajor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptStudentListOfMajor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\MessageBoxEx\MessageBoxEx.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptSessionsOfTeacher3months.xsc">
+      <DependentUpon>dsViwRptSessionsOfTeacher3months.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptSessionsOfTeacher3months.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsViwRptSessionsOfTeacher3months.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptSessionsOfTeacher3months.xss">
+      <DependentUpon>dsViwRptSessionsOfTeacher3months.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsEmployeeInformation.xsc">
+      <DependentUpon>dsEmployeeInformation.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsEmployeeInformation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeeInformation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsEmployeeInformation.xss">
+      <DependentUpon>dsEmployeeInformation.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsEmployeePayFactor.xsc">
+      <DependentUpon>dsEmployeePayFactor.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsEmployeePayFactor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmployeePayFactor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsEmployeePayFactor.xss">
+      <DependentUpon>dsEmployeePayFactor.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsIncomeInterval.xsc">
+      <DependentUpon>dsIncomeInterval.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsIncomeInterval.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsIncomeInterval.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsIncomeInterval.xss">
+      <DependentUpon>dsIncomeInterval.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsPaysOfTeacherInterval.xsc">
+      <DependentUpon>dsPaysOfTeacherInterval.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsPaysOfTeacherInterval.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPaysOfTeacherInterval.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsPaysOfTeacherInterval.xss">
+      <DependentUpon>dsPaysOfTeacherInterval.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsRegisteredStudentsPerEmployee.xsc">
+      <DependentUpon>dsRegisteredStudentsPerEmployee.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsRegisteredStudentsPerEmployee.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRegisteredStudentsPerEmployee.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsRegisteredStudentsPerEmployee.xss">
+      <DependentUpon>dsRegisteredStudentsPerEmployee.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsReportHeader.xsc">
+      <DependentUpon>dsReportHeader.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsReportHeader.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReportHeader.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsReportHeader.xss">
+      <DependentUpon>dsReportHeader.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsSchoolSpecification.xsc">
+      <DependentUpon>dsSchoolSpecification.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsSchoolSpecification.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSchoolSpecification.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsSchoolSpecification.xss">
+      <DependentUpon>dsSchoolSpecification.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsStudentInformation.xsc">
+      <DependentUpon>dsStudentInformation.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsStudentInformation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsStudentInformation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsStudentInformation.xss">
+      <DependentUpon>dsStudentInformation.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsStudentPayFactor.xsc">
+      <DependentUpon>dsStudentPayFactor.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsStudentPayFactor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsStudentPayFactor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsStudentPayFactor.xss">
+      <DependentUpon>dsStudentPayFactor.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsStudentsOfPublicClass.xsc">
+      <DependentUpon>dsStudentsOfPublicClass.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsStudentsOfPublicClass.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsStudentsOfPublicClass.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsStudentsOfPublicClass.xss">
+      <DependentUpon>dsStudentsOfPublicClass.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsTeacherInformation.xsc">
+      <DependentUpon>dsTeacherInformation.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsTeacherInformation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTeacherInformation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsTeacherInformation.xss">
+      <DependentUpon>dsTeacherInformation.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsTeacherPayFactor.xsc">
+      <DependentUpon>dsTeacherPayFactor.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsTeacherPayFactor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTeacherPayFactor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsTeacherPayFactor.xss">
+      <DependentUpon>dsTeacherPayFactor.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsTypcialOutcomeYear.xsc">
+      <DependentUpon>dsTypcialOutcomeYear.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsTypcialOutcomeYear.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTypcialOutcomeYear.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsTypcialOutcomeYear.xss">
+      <DependentUpon>dsTypcialOutcomeYear.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptClassesOfTeacherInterval.xsc">
+      <DependentUpon>dsViwRptClassesOfTeacherInterval.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptClassesOfTeacherInterval.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsViwRptClassesOfTeacherInterval.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptClassesOfTeacherInterval.xss">
+      <DependentUpon>dsViwRptClassesOfTeacherInterval.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptMinistryReport.xsc">
+      <DependentUpon>dsViwRptMinistryReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptMinistryReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsViwRptMinistryReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptMinistryReport.xss">
+      <DependentUpon>dsViwRptMinistryReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptRegisterationStudentFactor.xsc">
+      <DependentUpon>dsViwRptRegisterationStudentFactor.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptRegisterationStudentFactor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsViwRptRegisterationStudentFactor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptRegisterationStudentFactor.xss">
+      <DependentUpon>dsViwRptRegisterationStudentFactor.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptSessionsOfTeacherInterval.xsc">
+      <DependentUpon>dsViwRptSessionsOfTeacherInterval.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptSessionsOfTeacherInterval.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsViwRptSessionsOfTeacherInterval.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptSessionsOfTeacherInterval.xss">
+      <DependentUpon>dsViwRptSessionsOfTeacherInterval.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptStudentListOfMajor.xsc">
+      <DependentUpon>dsViwRptStudentListOfMajor.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptStudentListOfMajor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsViwRptStudentListOfMajor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\ReportDataSets\dsViwRptStudentListOfMajor.xss">
+      <DependentUpon>dsViwRptStudentListOfMajor.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsReportHeader.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReportHeader.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsStudentInformation.cs">
+      <DependentUpon>dsStudentInformation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataSets\dsStudentInformation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsStudentInformation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportFiller.cs" />
+    <Compile Include="Reports\ReportPapers\BaseReports\rptFooter.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptFooter.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\BaseReports\rptHeaderArm.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptHeaderArm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\BaseReports\rptHeaderBackground.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptHeaderBackground.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPapers\rptStudentInformation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptStudentInformation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tools\Cloner.cs" />
+    <Compile Include="Tools\DatagridFiller.cs" />
+    <Compile Include="Tools\DbSynch.cs" />
+    <Compile Include="Tools\ErrorCollector.cs" />
+    <Compile Include="Tools\FormRequester.cs" />
+    <Compile Include="Tools\IPaneled.cs" />
+    <Compile Include="Tools\JobLogger.cs" />
+    <Compile Include="Tools\LastChangeManager.cs" />
+    <Compile Include="Tools\ComboManager.cs" />
+    <Compile Include="Tools\MessageBoxEx\MessageBoxEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\MessageBoxEx\MessageBoxEx.Designer.cs">
+      <DependentUpon>MessageBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\MessageCreator.cs" />
+    <Compile Include="Tools\PanelModifier.cs" />
+    <Compile Include="Tools\Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.10.5">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports Basic for Visual Studio 2008 %28x86, x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.Framework">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.InfoStore">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Widgets\HengamWidgets\HengamWidgets.csproj">
+      <Project>{1550ecc3-69f1-425b-aa52-b1f1b1376b4e}</Project>
+      <Name>HengamWidgets</Name>
+    </ProjectReference>
+    <ProjectReference Include="Widgets\StarndardWidgets\StarndardWidgets.csproj">
+      <Project>{df0bb182-581e-4169-80f1-41fda00596cc}</Project>
+      <Name>StarndardWidgets</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

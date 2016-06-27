@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTeacherPayFactor" targetNamespace="http://tempuri.org/dsTeacherPayFactor.xsd" xmlns:mstns="http://tempuri.org/dsTeacherPayFactor.xsd" xmlns="http://tempuri.org/dsTeacherPayFactor.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HengamConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HengamConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Hengam.Properties.Settings.GlobalReference.Default.HengamConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTeacherPayFactor" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsTeacherPayFactor" msprop:Generator_UserDSName="dsTeacherPayFactor">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="viwRptTeacherPayFactor" msprop:Generator_UserTableName="viwRptTeacherPayFactor" msprop:Generator_RowEvArgName="viwRptTeacherPayFactorRowChangeEvent" msprop:Generator_TableVarName="tableviwRptTeacherPayFactor" msprop:Generator_TablePropName="viwRptTeacherPayFactor" msprop:Generator_RowDeletingName="viwRptTeacherPayFactorRowDeleting" msprop:Generator_RowChangingName="viwRptTeacherPayFactorRowChanging" msprop:Generator_RowDeletedName="viwRptTeacherPayFactorRowDeleted" msprop:Generator_TableClassName="viwRptTeacherPayFactorDataTable" msprop:Generator_RowChangedName="viwRptTeacherPayFactorRowChanged" msprop:Generator_RowEvHandlerName="viwRptTeacherPayFactorRowChangeEventHandler" msprop:Generator_RowClassName="viwRptTeacherPayFactorRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="payID" msprop:Generator_ColumnVarNameInTable="columnpayID" msprop:Generator_ColumnPropNameInRow="payID" msprop:Generator_ColumnPropNameInTable="payIDColumn" msprop:Generator_UserColumnName="payID" type="xs:int" />
+              <xs:element name="teacherID" msprop:Generator_ColumnVarNameInTable="columnteacherID" msprop:Generator_ColumnPropNameInRow="teacherID" msprop:Generator_ColumnPropNameInTable="teacherIDColumn" msprop:Generator_UserColumnName="teacherID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="payTypeID" msprop:Generator_ColumnVarNameInTable="columnpayTypeID" msprop:Generator_ColumnPropNameInRow="payTypeID" msprop:Generator_ColumnPropNameInTable="payTypeIDColumn" msprop:Generator_UserColumnName="payTypeID" type="xs:int" />
+              <xs:element name="fee" msprop:Generator_ColumnVarNameInTable="columnfee" msprop:Generator_ColumnPropNameInRow="fee" msprop:Generator_ColumnPropNameInTable="feeColumn" msprop:Generator_UserColumnName="fee" type="xs:int" />
+              <xs:element name="discount" msprop:Generator_ColumnVarNameInTable="columndiscount" msprop:Generator_ColumnPropNameInRow="discount" msprop:Generator_ColumnPropNameInTable="discountColumn" msprop:Generator_UserColumnName="discount" type="xs:int" minOccurs="0" />
+              <xs:element name="payDate" msprop:Generator_ColumnVarNameInTable="columnpayDate" msprop:Generator_ColumnPropNameInRow="payDate" msprop:Generator_ColumnPropNameInTable="payDateColumn" msprop:Generator_UserColumnName="payDate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="checkDate" msprop:Generator_ColumnVarNameInTable="columncheckDate" msprop:Generator_ColumnPropNameInRow="checkDate" msprop:Generator_ColumnPropNameInTable="checkDateColumn" msprop:Generator_UserColumnName="checkDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="checkNumber" msprop:Generator_ColumnVarNameInTable="columncheckNumber" msprop:Generator_ColumnPropNameInRow="checkNumber" msprop:Generator_ColumnPropNameInTable="checkNumberColumn" msprop:Generator_UserColumnName="checkNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnPropNameInTable="descriptionColumn" msprop:Generator_UserColumnName="description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="classID" msprop:Generator_ColumnVarNameInTable="columnclassID" msprop:Generator_ColumnPropNameInRow="classID" msprop:Generator_ColumnPropNameInTable="classIDColumn" msprop:Generator_UserColumnName="classID" type="xs:int" />
+              <xs:element name="payTypeName" msprop:Generator_ColumnVarNameInTable="columnpayTypeName" msprop:Generator_ColumnPropNameInRow="payTypeName" msprop:Generator_ColumnPropNameInTable="payTypeNameColumn" msprop:Generator_UserColumnName="payTypeName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="firstName" msprop:Generator_ColumnVarNameInTable="columnfirstName" msprop:Generator_ColumnPropNameInRow="firstName" msprop:Generator_ColumnPropNameInTable="firstNameColumn" msprop:Generator_UserColumnName="firstName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lastName" msprop:Generator_ColumnVarNameInTable="columnlastName" msprop:Generator_ColumnPropNameInRow="lastName" msprop:Generator_ColumnPropNameInTable="lastNameColumn" msprop:Generator_UserColumnName="lastName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="className" msprop:Generator_ColumnVarNameInTable="columnclassName" msprop:Generator_ColumnPropNameInRow="className" msprop:Generator_ColumnPropNameInTable="classNameColumn" msprop:Generator_UserColumnName="className">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="majorID" msprop:Generator_ColumnVarNameInTable="columnmajorID" msprop:Generator_ColumnPropNameInRow="majorID" msprop:Generator_ColumnPropNameInTable="majorIDColumn" msprop:Generator_UserColumnName="majorID" type="xs:int" />
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:int" />
+              <xs:element name="groupPayID" msprop:Generator_ColumnVarNameInTable="columngroupPayID" msprop:Generator_ColumnPropNameInRow="groupPayID" msprop:Generator_ColumnPropNameInTable="groupPayIDColumn" msprop:Generator_UserColumnName="groupPayID" type="xs:string" minOccurs="0" />
+              <xs:element name="schoolPrice" msprop:Generator_ColumnVarNameInTable="columnschoolPrice" msprop:Generator_ColumnPropNameInRow="schoolPrice" msprop:Generator_ColumnPropNameInTable="schoolPriceColumn" msprop:Generator_UserColumnName="schoolPrice" type="xs:int" />
+              <xs:element name="sessionCount" msprop:Generator_ColumnVarNameInTable="columnsessionCount" msprop:Generator_ColumnPropNameInRow="sessionCount" msprop:Generator_ColumnPropNameInTable="sessionCountColumn" msprop:Generator_UserColumnName="sessionCount" type="xs:int" />
+              <xs:element name="majorName" msprop:Generator_ColumnVarNameInTable="columnmajorName" msprop:Generator_ColumnPropNameInRow="majorName" msprop:Generator_ColumnPropNameInTable="majorNameColumn" msprop:Generator_UserColumnName="majorName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="operatorName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnoperatorName" msprop:Generator_ColumnPropNameInRow="operatorName" msprop:Generator_ColumnPropNameInTable="operatorNameColumn" msprop:Generator_UserColumnName="operatorName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="classRegisterationDate" msprop:Generator_ColumnVarNameInTable="columnclassRegisterationDate" msprop:Generator_ColumnPropNameInRow="classRegisterationDate" msprop:Generator_ColumnPropNameInTable="classRegisterationDateColumn" msprop:Generator_UserColumnName="classRegisterationDate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="heldCount" msprop:Generator_ColumnVarNameInTable="columnheldCount" msprop:Generator_ColumnPropNameInRow="heldCount" msprop:Generator_ColumnPropNameInTable="heldCountColumn" msprop:Generator_UserColumnName="heldCount" type="xs:int" minOccurs="0" />
+              <xs:element name="willHeldCount" msprop:Generator_ColumnVarNameInTable="columnwillHeldCount" msprop:Generator_ColumnPropNameInRow="willHeldCount" msprop:Generator_ColumnPropNameInTable="willHeldCountColumn" msprop:Generator_UserColumnName="willHeldCount" type="xs:int" minOccurs="0" />
+              <xs:element name="notlHeldCount" msprop:Generator_ColumnVarNameInTable="columnnotlHeldCount" msprop:Generator_ColumnPropNameInRow="notlHeldCount" msprop:Generator_ColumnPropNameInTable="notlHeldCountColumn" msprop:Generator_UserColumnName="notlHeldCount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:viwRptTeacherPayFactor" />
+      <xs:field xpath="mstns:payID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

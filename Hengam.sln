@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hengam", "Hengam.csproj", "{533D40A5-0ABA-49A4-AE85-AA09918E45DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HengamWidgets", "Widgets\HengamWidgets\HengamWidgets.csproj", "{1550ECC3-69F1-425B-AA52-B1F1B1376B4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarndardWidgets", "Widgets\StarndardWidgets\StarndardWidgets.csproj", "{DF0BB182-581E-4169-80F1-41FDA00596CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{533D40A5-0ABA-49A4-AE85-AA09918E45DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533D40A5-0ABA-49A4-AE85-AA09918E45DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533D40A5-0ABA-49A4-AE85-AA09918E45DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533D40A5-0ABA-49A4-AE85-AA09918E45DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1550ECC3-69F1-425B-AA52-B1F1B1376B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1550ECC3-69F1-425B-AA52-B1F1B1376B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1550ECC3-69F1-425B-AA52-B1F1B1376B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1550ECC3-69F1-425B-AA52-B1F1B1376B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0BB182-581E-4169-80F1-41FDA00596CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0BB182-581E-4169-80F1-41FDA00596CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0BB182-581E-4169-80F1-41FDA00596CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0BB182-581E-4169-80F1-41FDA00596CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

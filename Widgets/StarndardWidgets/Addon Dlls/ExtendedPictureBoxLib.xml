@@ -1,0 +1,2806 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExtendedPictureBoxLib</name>
+    </assembly>
+    <members>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.Alpha"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.StartValue"/> and
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.StartValue"/>.
+            Giving 100 will return the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.StartAlpha">
+            <summary>
+            Gets or sets the starting alpha for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.EndAlpha">
+            <summary>
+            Gets or sets the ending alpha for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.Alpha"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxAlphaAnimator.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColor2Animator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor2"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColor2Animator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColor2Animator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColor2Animator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColor2Animator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColor2Animator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor2"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColor2Animator.Control">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColor2Animator.Control"/> which 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor2"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColor2Animator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColorGradientRotationAngleAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColorGradientRotationAngle"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColorGradientRotationAngleAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.RotationAngle"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.StartValue"/> and
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.StartValue"/>.
+            Giving 100 will return the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.StartRotationAngle">
+            <summary>
+            Gets or sets the starting rotation angle for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.EndRotationAngle">
+            <summary>
+            Gets or sets the ending rotation angle for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.ExtendedPictureBox"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.ExtendedPictureBoxInternal">
+            <summary>
+            Internal accessor for the animated <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxRotationAngleAnimator.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColorGradientRotationAngleAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColorGradientRotationAngleAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColorGradientRotationAngleAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColorGradientRotationAngleAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColorGradientRotationAngle"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxBackColorGradientRotationAngleAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxExtraImageRotationAngleAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageRotationAngle"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxExtraImageRotationAngleAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxExtraImageRotationAngleAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxExtraImageRotationAngleAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxExtraImageRotationAngleAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxExtraImageRotationAngleAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageRotationAngle"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxExtraImageRotationAngleAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxImageOffsetAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ImageOffset"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxImageOffsetAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase">
+            <summary>
+            Base class inheriting <see cref="T:Animations.AnimatorBase"/> helping to
+            animate thevone of the offset properties of an <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.ShouldSerializeStartOffset">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.StartOffset"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.ShouldSerializeEndOffset">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.EndOffset"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.StartValue"/> and
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.StartValue"/>.
+            Giving 100 will return the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.StartOffset">
+            <summary>
+            Gets or sets the starting offset for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.EndOffset">
+            <summary>
+            Gets or sets the ending offset for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.ExtendedPictureBox"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.CurrentOffset">
+            <summary>
+            Unsafe getter and setter for inheriting classes to match
+            to the actual property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.DefaultOffset">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.StartOffset"/> and
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.EndOffset"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxOffsetAnimatorBase.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxImageOffsetAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxImageOffsetAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxImageOffsetAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxImageOffsetAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxImageOffsetAnimator.ExtendedPictureBox"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxImageOffsetAnimator.CurrentOffset">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxShadowOffsetAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ShadowOffset"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxShadowOffsetAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxShadowOffsetAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxShadowOffsetAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxShadowOffsetAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxShadowOffsetAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxShadowOffsetAnimator.ExtendedPictureBox"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxShadowOffsetAnimator.CurrentOffset">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.State"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator.ExtendedPictureBox"/>.
+            It can be altered by setting which parts of the state should be animated.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator.Dispose(System.Boolean)">
+            <summary>
+            Frees used resources.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator.StartState">
+            <summary>
+            Gets or sets the starting state for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator.EndState">
+            <summary>
+            Gets or sets the ending state for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.State"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator.AnimatedProperties">
+            <summary>
+            Sets or gets which properties of a given <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator.ExtendedPictureBox"/>
+            should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator.Item(ExtendedPictureBoxLib.PictureBoxStateProperties)">
+            <summary>
+            Gets or sets whether a given <see cref="T:ExtendedPictureBoxLib.PictureBoxStateProperties"/> is set
+            in <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator.AnimatedProperties"/>.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloColorAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloColor"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloColorAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloColorAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloColorAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloColorAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloColorAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloColor"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloColorAnimator.Control">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloColorAnimator.Control"/> which 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloColor"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloColorAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloWidth"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.StartValue"/> and
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.StartValue"/>.
+            Giving 100 will return the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.StartWidth">
+            <summary>
+            Gets or sets the starting width for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.EndWidth">
+            <summary>
+            Gets or sets the ending width for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloWidth"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextHaloWidthAnimator.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextOffsetAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextOffset"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextOffsetAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextOffsetAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextOffsetAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextOffsetAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextOffsetAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextOffsetAnimator.ExtendedPictureBox"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextOffsetAnimator.CurrentOffset">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextRotationAngleAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextRotationAngle"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextRotationAngleAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextRotationAngleAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextRotationAngleAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextRotationAngleAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextRotationAngleAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextRotationAngle"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextRotationAngleAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextZoom"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.StartValue"/> and
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.StartValue"/>.
+            Giving 100 will return the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.StartZoom">
+            <summary>
+            Gets or sets the starting zoom for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.EndZoom">
+            <summary>
+            Gets or sets the ending zoom for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextZoom"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxTextZoomAnimator.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.Zoom"/> of a 
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.StartValue"/> and
+            <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.StartValue"/>.
+            Giving 100 will return the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.StartZoom">
+            <summary>
+            Gets or sets the starting zoom for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.EndZoom">
+            <summary>
+            Gets or sets the ending zoom for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.ExtendedPictureBox">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.ExtendedPictureBox"/> which 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.Zoom"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxZoomAnimator.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Design.ColorEditorEx">
+            <summary>
+            Class extending the <see cref="T:System.Drawing.Design.ColorEditor"/> which adds the
+            capability to also change the alpha value of the color.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.ColorEditorEx.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.ColorEditorEx.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Edits the given value.
+            </summary>
+            <param name="context">Context infromation.</param>
+            <param name="provider">Service provider.</param>
+            <param name="value">Value to be edited.</param>
+            <returns>An edited value.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.ColorEditorEx.PaintValue(System.Drawing.Design.PaintValueEventArgs)">
+            <summary>
+            Paints some extra background to better visualize
+            transulcent colors.
+            </summary>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Design.ColorEditorEx.ColorUIWrapper">
+            <summary>
+            Wrapper for the private ColorUI class nested within <see cref="T:System.Drawing.Design.ColorEditor"/>.
+            It publishes its internals via reflection and adds a <see cref="T:System.Windows.Forms.TrackBar"/> to
+            adjust teh alpha value.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.ColorEditorEx.ColorUIWrapper.#ctor(ExtendedPictureBoxLib.Design.ColorEditorEx)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="colorEditor">The editor this instance belongs to.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.ColorEditorEx.ColorUIWrapper.Start(System.Windows.Forms.Design.IWindowsFormsEditorService,System.Object)">
+            <summary>
+            Starts the editing process.
+            </summary>
+            <param name="service">The editor service.</param>
+            <param name="value">The value to be edited.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.ColorEditorEx.ColorUIWrapper.End">
+            <summary>
+            End the editing process.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Design.ColorEditorEx.ColorUIWrapper.Control">
+            <summary>
+            The control to be shown when a color is edited.
+            The concrete type is ColorUI which is privately hidden
+            within System.Drawing.Design.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Design.ColorEditorEx.ColorUIWrapper.Value">
+            <summary>
+            Gets the edited color with applied alpha value.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Design.FlagCheckedListBox">
+            <summary>
+            Control inheriting from <see cref="T:System.Windows.Forms.CheckedListBox"/> to
+            show and select values from a Flags enumeration.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.FlagCheckedListBox.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.FlagCheckedListBox.Dispose(System.Boolean)">
+            <summary>
+            Frees used resources.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.FlagCheckedListBox.OnItemCheck(System.Windows.Forms.ItemCheckEventArgs)">
+            <summary>
+            Handles the <see cref="E:System.Windows.Forms.CheckedListBox.ItemCheck"/> event.
+            </summary>
+            <param name="e">Event arguments</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.FlagCheckedListBox.Add(System.Int32,System.String)">
+            <summary>
+            Adds a new item to the list.
+            </summary>
+            <param name="value">Value of the new item.</param>
+            <param name="caption">Caption of the new item.</param>
+            <returns>The new item.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.FlagCheckedListBox.Add(ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem)">
+            <summary>
+            Adds an item to the list.
+            </summary>
+            <param name="item">The item.</param>
+            <returns>The item.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.FlagCheckedListBox.GetCurrentValue">
+            <summary>
+            Gets the current bit value corresponding to all checked items
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Design.FlagCheckedListBox.EnumValue">
+            <summary>
+            Gets or sets the current enumeration value.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem">
+            <summary>
+            Represents one item within a <see cref="T:ExtendedPictureBoxLib.Design.FlagCheckedListBox"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem.#ctor(System.Int32,System.String)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="value"><see cref="P:ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem.Value"/> of the new instance.</param>
+            <param name="caption"><see cref="P:ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem.Caption"/> of the new instance</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem.IsMemberFlag(ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem)">
+            <summary>
+            Gets whether true if this value is a member of the composite bit value.
+            </summary>
+            <param name="composite"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem.ToString">
+            <summary>
+            Return the <see cref="P:ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem.Caption"/>.
+            </summary>
+            <returns>The <see cref="P:ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem.Caption"/>.</returns>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem.Value">
+            <summary>
+            Return the enumeration value this item represents.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem.Caption">
+            <summary>
+            Returns the caption to be shown for this item.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.Design.FlagCheckedListBoxItem.IsFlag">
+            <summary>
+            Gets whether the value corresponds to a single bit being set.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Design.FlagEnumUIEditor">
+            <summary>
+            Controls the design time editor for a flags enumerations.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.FlagEnumUIEditor.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.FlagEnumUIEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Edits a value regarding a given service provider under a specified context.
+            </summary>
+            <param name="context">Context informations.</param>
+            <param name="provider">Service provider.</param>
+            <param name="value">Value to be edited.</param>
+            <returns>The edited value.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.FlagEnumUIEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Gets the editor style.
+            </summary>
+            <param name="context">Context informations.</param>
+            <returns></returns>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Design.PictureBoxStateConverter">
+            <summary>
+            Designer converter class for <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/>s.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.PictureBoxStateConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Determines whether this converter can convert a <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/>
+            to a given type in the specified context.
+            </summary>
+            <param name="context">The formatting context.</param>
+            <param name="destType">The type the conversion should result into.</param>
+            <returns>True if the converter can handle the conversion, otherwise false.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.PictureBoxStateConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Converts a specified value (which must be a <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/>) into a given
+            type un the specified context.
+            </summary>
+            <param name="context">The formatting context.</param>
+            <param name="info">The culture under which the conversion should be performed.</param>
+            <param name="value">Value to convert.</param>
+            <param name="destType">The type the conversion should result into.</param>
+            <returns>The converted value.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.PictureBoxStateConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)">
+            <summary>
+            Creates a <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/> instance from a collection of properties.
+            </summary>
+            <param name="context">The formatting context.</param>
+            <param name="propertyValues">Collecion of properties.</param>
+            <returns>A new <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/> instance.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.PictureBoxStateConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Gets whether <see cref="M:ExtendedPictureBoxLib.Design.PictureBoxStateConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)"/> is supported in the specified context.
+            </summary>
+            <param name="context">The formatting context.</param>
+            <returns>True.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.PictureBoxStateConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])">
+            <summary>
+            Gets the properties associated with a <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/>.
+            </summary>
+            <param name="context">The formatting context.</param>
+            <param name="value">The value to obtain the properties from.</param>
+            <param name="attributes">Array of attributes.</param>
+            <returns>Collection of properties.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.PictureBoxStateConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Gets whether <see cref="M:ExtendedPictureBoxLib.Design.PictureBoxStateConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])"/> is supported in the specified context.
+            </summary>
+            <param name="context">The formatting context.</param>
+            <returns>True.</returns>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Design.ProgressStepCollectionEditor">
+            <summary>
+            Controls the design time collection editor for a <see cref="T:ExtendedPictureBoxLib.ProgressStepCollection"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.ProgressStepCollectionEditor.#ctor(System.Type)">
+            <summary>
+            Creates a new instance for the specified type.
+            </summary>
+            <param name="type">Type of the items to be edited.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.ProgressStepCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Edits a value regarding a given service provider under a specified context.
+            </summary>
+            <param name="context">Context informations.</param>
+            <param name="provider">Service provider.</param>
+            <param name="value">Value to be edited.</param>
+            <returns>The edited value.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.ProgressStepCollectionEditor.CreateCollectionForm">
+            <summary>
+            Creates a form to modifiy a collection.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.ProgressStepCollectionEditor.CreateInstance(System.Type)">
+            <summary>
+            Creates a new instance for the collection.
+            </summary>
+            <param name="itemType">Type of the instance to be created.</param>
+            <returns>A new instance with default values.</returns>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.Design.ProgressStepConverter">
+            <summary>
+            Designer converter class for <see cref="T:ExtendedPictureBoxLib.ProgressStep"/>s.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.ProgressStepConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Determines whether this converter can convert a <see cref="T:ExtendedPictureBoxLib.ProgressStep"/>
+            to a given type in the specified context.
+            </summary>
+            <param name="context">The formatting context.</param>
+            <param name="destType">The type the conversion should result into.</param>
+            <returns>True if the converter can handle the conversion, otherwise false.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.Design.ProgressStepConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Converts a specified value (which must be a <see cref="T:ExtendedPictureBoxLib.ProgressStep"/>) into a given
+            type un the specified context.
+            </summary>
+            <param name="context">The formatting context.</param>
+            <param name="info">The culture under which the conversion should be performed.</param>
+            <param name="value">Value to convert.</param>
+            <param name="destType">The type the conversion should result into.</param>
+            <returns>The converted value.</returns>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.AnimatedPictureBox">
+            <summary>
+            Control further extending the <see cref="T:ExtendedPictureBoxLib.ExtendedPictureBox"/> by
+            adding animation capabilities.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.ExtendedPictureBox">
+            <summary>
+            Control which displays an image with many extra properties.
+            The background can be a gradient in any angle between two colors.
+            The image can be adjusted regarding it's transparency, rotation and sizing.
+            A small extra image can be added at a specified position.
+            A border of different styles and color can be added.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.ShouldSerializeBackColor2">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor2"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.ShouldSerializeTextHaloColor">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloColor"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.ShouldSerializeBorderColor">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BorderColor"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.ShouldSerializeShadowOffset">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ShadowOffset"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.ShouldSerializeImageOffset">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ImageOffset"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.ShouldSerializeTextOffset">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextOffset"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnImageChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.ImageChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnExtraImageChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnExtraImageAlignmentChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageAlignmentChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnBackColor2Changed(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor2Changed"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnBackColorGradientRotationAngleChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.BackColorGradientRotationAngleChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnExtraImageRotationAngleChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageRotationAngleChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnZoomChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.ZoomChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnRotationAngleChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.RotationAngleChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnAlphaChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.AlphaChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnStateChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.StateChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnBaseSizeModeChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.BaseSizeModeChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnBorderStyleChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.BorderStyleChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnBorderColorChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.BorderColorChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnAllowDisabledPaintingChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.AllowDisabledPaintingChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnTextAlignChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.TextAlignChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnTextRotationAngleChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.TextRotationAngleChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnTextHaloWidthChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloWidthChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnTextHaloColorChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloColorChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnTextZoomChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.TextZoomChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnShadowModeChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.ShadowModeChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnShadowOffsetChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.ShadowOffsetChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnImageOffsetChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.ImageOffsetChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnTextOffsetChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.ExtendedPictureBox.TextOffsetChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnRightToLeftChanged(System.EventArgs)">
+            <summary>
+            Reinitializes the internal string format of the text.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ExtendedPictureBox.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Paints the control.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.ImageChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.Image"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImage"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageAlignmentChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageAlignment"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor2Changed">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor2"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.BackColorGradientRotationAngleChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColorGradientRotationAngle"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageRotationAngleChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageRotationAngle"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.ZoomChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.Zoom"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.RotationAngleChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.RotationAngle"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.AlphaChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.Alpha"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.StateChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.State"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.BaseSizeModeChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BaseSizeMode"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.BorderStyleChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BorderStyle"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.BorderColorChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BorderColor"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.AllowDisabledPaintingChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.AllowDisabledPainting"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.TextAlignChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextAlign"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.TextRotationAngleChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextRotationAngle"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloWidthChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloWidth"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloColorChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloColor"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.TextZoomChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextZoom"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.ShadowOffsetChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ShadowOffset"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.ShadowModeChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ShadowMode"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.TextOffsetChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextOffset"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.ExtendedPictureBox.ImageOffsetChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ImageOffset"/> has changed.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.State">
+            <summary>
+            Gets or sets a complete description of the current visual state of the
+            control only missing the two images, the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageAlignment"/>,
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BaseSizeMode"/> and <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BorderStyle"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor2">
+            <summary>
+            Gets or sets the second color to draw the background gradient.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColorGradientRotationAngle">
+            <summary>
+            Angle of the background gradient in degrees.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageRotationAngle">
+            <summary>
+            Angle of the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImage"/> in degrees.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.Zoom">
+            <summary>
+            Gets or sets the zoom factor with which the main image should be drawn.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.RotationAngle">
+            <summary>
+            Gets or sets the rotation angle of the main image in degrees.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.Alpha">
+            <summary>
+            Gets or sets the alpha value which should be applied to the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.Image"/>.
+            The alpha value is calcualted on a per pixel basis and pixels already
+            having an alpha value less then 255 will be reduced further. The effect is
+            that transparent parts of an image will remain transparent.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextRotationAngle">
+            <summary>
+            Gets or sets the rotation angle of the text in degrees.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloWidth">
+            <summary>
+            Gets or sets the width of the halo of the text.
+            0 or smaller if now halo should be shown.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloColor">
+            <summary>
+            Gets or sets the width of the color of the halo of the text.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextZoom">
+            <summary>
+            Gets or sets the zoom factor with which the text should be drawn.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.ShadowOffset">
+            <summary>
+            Gets or sets the offset of the main image shadow.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.ImageOffset">
+            <summary>
+            Gets or sets the offset of the main image.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextOffset">
+            <summary>
+            Gets or sets the offset of the text.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.BorderColor">
+            <summary>
+            Gets or sets the color of the surrounding border.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.Image">
+            <summary>
+            Gets or sets the main image to be shown.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImage">
+            <summary>
+            Gets or sets a little extra image to be shown.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageAlignment">
+            <summary>
+            Gets or sets the alignment of the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImage"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.BaseSizeMode">
+            <summary>
+            Gets or sets the mode how the 100% zoom size is calculated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.BorderStyle">
+            <summary>
+            Gets or sets the style of the surrounding border.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.AllowDisabledPainting">
+            <summary>
+            Gets or sets whether the images will be painted specially when
+            <see cref="P:System.Windows.Forms.Control.Enabled"/> is set to false.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextAlign">
+            <summary>
+            Gets or sets the alignment of the text.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.ShadowMode">
+            <summary>
+            Gets or sets whether a shadow of the main image should be drawn
+            and how the offset is calculated.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.DefaultShadowOffset">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ShadowOffset"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.DefaultTextOffset">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextOffset"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.DefaultImageOffset">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ImageOffset"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.DefaultBorderColor">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BorderColor"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor">
+            <summary>
+            Gets or sets the first background color.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.ForeColor">
+            <summary>
+            Gets or sets the color of the text.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ExtendedPictureBox.Text">
+            <summary>
+            Redirects the given text to the contained <see cref="T:System.Windows.Forms.Label"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureBox.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureBox.Dispose(System.Boolean)">
+            <summary>
+            Frees used resources.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureBox.InitializeComponent">
+            <summary>
+            Erforderliche Methode für die Designerunterstützung. 
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureBox.Animate(ExtendedPictureBoxLib.PictureBoxState)">
+            <summary>
+            Animates from the last end state to the given new state.
+            </summary>
+            <param name="state">Destination state of the animation.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureBox.StopAnimation">
+            <summary>
+            Stops the animation immediately.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureBox.UpdateStartValues(ExtendedPictureBoxLib.PictureBoxState)">
+            <summary>
+            Updates the starting state of the contained animator.
+            </summary>
+            <param name="state">State to set.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureBox.UpdateEndValues(ExtendedPictureBoxLib.PictureBoxState)">
+            <summary>
+            Updates the ending state of the contained animator.
+            </summary>
+            <param name="state">State to set.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureBox.OnAnimationIntervallChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationIntervallChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureBox.OnAnimationStepSizeChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationStepSizeChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureBox.OnAnimationStarted(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationStarted"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureBox.OnAnimationStopped(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationStopped"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureBox.OnAnimationFinished(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationFinished"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationIntervallChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationIntervall"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationStepSizeChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationStepSize"/> has changed.
+            </summary>
+            
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationStarted">
+            <summary>
+            Event which gets fired when animation has been started with <see cref="M:ExtendedPictureBoxLib.AnimatedPictureBox.Animate(ExtendedPictureBoxLib.PictureBoxState)"/>.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationFinished">
+            <summary>
+            Event which gets fired when animation has finished.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationStopped">
+            <summary>
+            Event which gets fired when animation has been stopped with <see cref="M:ExtendedPictureBoxLib.AnimatedPictureBox.StopAnimation"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureBox.StateAnimator">
+            <summary>
+            Gets the internally used <see cref="T:ExtendedPictureBoxLib.Animators.ExtendedPictureBoxStateAnimator"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationIntervall">
+            <summary>
+            Gets or sets the intervall between updates of the animation (in milliseconds).
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureBox.AnimationStepSize">
+            <summary>
+            Gets or sets the step size between updates of the animation
+            (in % - 100 will result in one step -> no actual animation).
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureBox.IsAnimationRunning">
+            <summary>
+            Gets whether an animation is currently running.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureBox.AnimatedStateProperties">
+            <summary>
+            Sets or gets which properties of given <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/>s
+            should be animated.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.AnimatedButtonState">
+            <summary>
+            Defines the states an <see cref="T:ExtendedPictureBoxLib.AnimatedPictureButton"/> can be in.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.AnimatedButtonState.Start">
+            <summary>
+            <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.StartState"/> is shown
+            (mouse is not hovering the button).
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.AnimatedButtonState.End">
+            <summary>
+            <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.EndState"/> is shown
+            (mouse is hovering the button).
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.AnimatedButtonState.Pushed">
+            <summary>
+            <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.PushedState"/> is shown
+            (mouse button is currently down on button).
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.AnimatedPictureButton">
+            <summary>
+            Control further extending the <see cref="T:ExtendedPictureBoxLib.AnimatedPictureBox"/> by
+            defining a <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.StartState"/> and an <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.EndState"/>.
+            It animtes itself between those two states when the mouse moves over
+            or leaves the control.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.Dispose(System.Boolean)">
+            <summary>
+            Frees used resources.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.InitializeComponent">
+            <summary>
+            Erforderliche Methode für die Designerunterstützung. 
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.AnimateToStart">
+            <summary>
+            Animates the control to its <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.StartState"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.AnimateToEnd">
+            <summary>
+            Animates the control to its <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.EndState"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.Push">
+            <summary>
+            Sets the buttons state to <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.PushedState"/> (no animation).
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.Release">
+            <summary>
+            Sets the buttons state to <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.EndState"/> (no animation).
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.ShouldSerializeStartState">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.StartState"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.ShouldSerializeEndState">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.EndState"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.ShouldSerializePushedState">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.PushedState"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.OnStartStateChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPictureButton.StartStateChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.OnEndStateChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPictureButton.EndStateChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.OnPushedStateChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPictureButton.PushedStateChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.OnPushedPropertiesChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPictureButton.PushedPropertiesChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.OnButtonStateChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPictureButton.ButtonStateChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.OnMouseEnter(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.MouseEnter"/> event and 
+            starts animation to <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.EndState"/>.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.OnMouseLeave(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.MouseLeave"/> event and 
+            starts animation to <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.StartState"/>.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.MouseDown"/> event and 
+            sets the state to <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.PushedState"/>.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.MouseUp"/> event and 
+            sets the state to <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.PushedState"/>.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPictureButton.OnEnabledChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged"/> event and 
+            starts animation to <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.StartState"/>.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPictureButton.StartStateChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.StartState"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPictureButton.EndStateChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.EndState"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPictureButton.PushedStateChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.PushedState"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPictureButton.PushedPropertiesChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.PushedState"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPictureButton.ButtonStateChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.ButtonState"/> has changed.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.ButtonState">
+            <summary>
+            Gets the state of the button.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.StartState">
+            <summary>
+            Gets or sets the state of the button when the mouse is not over it.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.EndState">
+            <summary>
+            Gets or sets the state of the button when the mouse is over it.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.PushedState">
+            <summary>
+            Gets or sets the state of the button when the mouse is over it.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.PushedProperties">
+            <summary>
+            Gets or sets which properties of the <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.PushedState"/>
+            should be applied when the button is clicked.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.DefaultStartState">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.StartState"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.DefaultEndState">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.EndState"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.DefaultPushedState">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.PushedState"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.Alpha">
+            <summary>
+            Gets or sets the alpha value which should be applied to the image.
+            The alpha value is calcualted on a per pixel basis and pixels already
+            having an alpha value less then 255 will be reduced further. The effect is
+            that transparent parts of an image will remain transparent.
+            Overridden to disable designer support.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.RotationAngle">
+            <summary>
+            Gets or sets the rotation angle of the main image in degrees.
+            Overridden to disable designer support.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.Zoom">
+            <summary>
+            Gets or sets the zoom factor with which the main image should be drawn.
+            Overridden to disable designer support.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.ExtraImageRotationAngle">
+            <summary>
+            Angle of the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImage"/> in degrees.
+            Overridden to disable designer support.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.BackColorGradientRotationAngle">
+            <summary>
+            Angle of the background gradient in degrees.
+            Overridden to disable designer support.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.BackColor">
+            <summary>
+            Gets or sets the first background color.
+            Readjusts also <see cref="P:ExtendedPictureBoxLib.AnimatedPictureButton.BackColor2"/> if it has the same value currently.
+            Overridden to disable designer support.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.BackColor2">
+            <summary>
+            Gets or sets the second color to draw the background gradient.
+            Overridden to disable designer support.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.TextRotationAngle">
+            <summary>
+            Gets or sets the rotation angle of the text in degrees.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.TextHaloWidth">
+            <summary>
+            Gets or sets the width of the halo of the text.
+            0 or smaller if now halo should be shown.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.TextHaloColor">
+            <summary>
+            Gets or sets the width of the color of the halo of the text.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.TextZoom">
+            <summary>
+            Gets or sets the zoom factor with which the text should be drawn.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.ShadowOffset">
+            <summary>
+            Gets or sets the offset of the main image shadow.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.ImageOffset">
+            <summary>
+            Gets or sets the offset of the main image.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.TextOffset">
+            <summary>
+            Gets or sets the offset of the text.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPictureButton.ShadowMode">
+            <summary>
+            Gets or sets whether a shadow of the main image should be drawn
+            and how the offset is calculated.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.AnimatedPicturesProgressBar">
+            <summary>
+            Control taking a <see cref="T:ExtendedPictureBoxLib.ProgressStepCollection"/>, creating one
+            <see cref="T:ExtendedPictureBoxLib.AnimatedPictureBox"/> foreach step and adding control
+            to one after another animation of them.
+            Thus is can be used to indicate the progress in a long process of
+            separated steps.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.#ctor">
+            <summary>
+            Creates a new empty instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.Dispose(System.Boolean)">
+            <summary>
+            Freeus used resources.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitializeComponent">
+            <summary> 
+            Erforderliche Methode für die Designerunterstützung. 
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.NextStep">
+            <summary>
+            Transforms the <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.CurrentStep"/> to <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedState"/>,
+            sets <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.CurrentStep"/> to the next following step and transforms it
+            into <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressState"/> also change the extra images to
+            the appropriate values.
+            If <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.BlockNextStepCall"/> is set to true than this call will not
+            return until the animations are still runnning.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.Reset">
+            <summary>
+            Resets all steps so that all are set to initial state.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.StopAnimations">
+            <summary>
+            Stops all currently ongoing animations.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.BeginInit">
+            <summary>
+            Signals the object that initialization is starting.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.EndInit">
+            <summary>
+            Signals the object that initialization is complete.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnResize(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.Resize"/> event and repositions the
+            contained steps.
+            </summary>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ShouldSerializeInitialState">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitialState"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ShouldSerializeInProgressState">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressState"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ShouldSerializeFinishedState">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedState"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ShouldSerializeInitialExtraImage">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitialExtraImage"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ShouldSerializeInProgressExtraImage">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressExtraImage"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ShouldSerializeFinishedExtraImage">
+            <summary>
+            Indicates the designer whether <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedExtraImage"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnStepNotificationControlChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.StepNotificationControlChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnInitialStateChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitialStateChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnInProgressStateChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressStateChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnFinishedStateChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedStateChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnInitialExtraImageChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitialExtraImageChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnInProgressExtraImageChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressExtraImageChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnFinishedExtraImageChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedExtraImageChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnExtraImageAlignmentChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ExtraImageAlignmentChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnTextAlignmentChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.TextAlignmentChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnAnimationIntervallChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimationIntervallChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnAnimationStepSizeChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimationStepSizeChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnAnimateExtraImageChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimateExtraImageChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnAnimateBackColorChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimateBackColorChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnShowExtraImagesChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ShowExtraImagesChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnBlockNextStepCallChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.BlockNextStepCallChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.OnFinishedNotificationTextChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedNotificationTextChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimationIntervallChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimationIntervall"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimationStepSizeChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimationStepSize"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.StepNotificationControlChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.StepNotificationControl"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitialStateChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitialState"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressStateChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressState"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedStateChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedState"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitialExtraImageChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitialExtraImage"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressExtraImageChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressExtraImage"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedExtraImageChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedExtraImage"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ExtraImageAlignmentChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ExtraImageAlignment"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.TextAlignmentChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.TextAlignment"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimateExtraImageChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimateExtraImage"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimateBackColorChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimateBackColor"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ShowExtraImagesChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ShowExtraImages"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.BlockNextStepCallChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.BlockNextStepCall"/> has changed.
+            </summary>
+        </member>
+        <member name="E:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedNotificationTextChanged">
+            <summary>
+            Event which gets fired when <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedNotificationText"/> has changed.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ShowExtraImages">
+            <summary>
+            Gets or sets whether the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImage"/>s
+            should be shown or not.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimateExtraImage">
+            <summary>
+            Gets or sets whether the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageRotationAngle"/>
+            should be animated or not.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimateBackColor">
+            <summary>
+            Gets or sets whether the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor"/>,
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor2"/> and 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColorGradientRotationAngle"/>
+            should be animated or not.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitialState">
+            <summary>
+            Gets or sets the state of the steps when they just have been initialized.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressState">
+            <summary>
+            Gets or sets the state of the steps while they are being processed.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedState">
+            <summary>
+            Gets or sets the state of the steps when they have been finished.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimationIntervall">
+            <summary>
+            Gets or sets the intervall between updates of the animation (in milliseconds).
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.AnimationStepSize">
+            <summary>
+            Gets or sets the step size between updates of the animation
+            (in % - 100 will result in one step -> no actual animation).
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.Steps">
+            <summary>
+            Gets a collection where <see cref="T:ExtendedPictureBoxLib.ProgressStep"/>s can be added/edited or removed
+            in order to configure the steps which should be shown by this instance.
+            Note that changes to this collection do not have any effect until
+            <see cref="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.EndInit"/> is called.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.BlockNextStepCall">
+            <summary>
+            Gets or sets whether a call to <see cref="M:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.NextStep"/> should be blocked
+            until the animation has finished.
+            This might be useful when the background processing is not located in
+            a separate thread and would block the GUI thread.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.CurrentStepIndex">
+            <summary>
+            Gets the index of the current <see cref="T:ExtendedPictureBoxLib.ProgressStep"/> instance
+            within the <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.Steps"/> collection.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.CurrentStep">
+            <summary>
+            Gets the current <see cref="T:ExtendedPictureBoxLib.ProgressStep"/> instance.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.StepNotificationControl">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Forms.Control"/> which should be notified
+            when the step progress has changed by setting its
+            <see cref="P:System.Windows.Forms.Control.Text"/> property.
+            This can be used for example for setting notification texts in
+            a separate <see cref="T:System.Windows.Forms.Label"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedNotificationText">
+            <summary>
+            Gets or sets the text which should be broadcasted when all steps have been
+            set to <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedState"/> and thus the processing should be over.
+            To insert the total count of steps dynamically into this text just insert
+            '{0}' a the position where the count should be displayed.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitialExtraImage">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImage"/> which
+            should be shown when a step is in initial state.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressExtraImage">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImage"/> which
+            should be shown while a step is in progress.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedExtraImage">
+            <summary>
+            Gets or sets the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImage"/> which
+            should be shown when a step has been finished.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.ExtraImageAlignment">
+            <summary>
+            Gets or sets the alignment of the extra images shown in the steps.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.TextAlignment">
+            <summary>
+            Gets or sets the alignment of the text shown in the steps.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.DefaultInitialState">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitialState"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.DefaultInProgressState">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressState"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.DefaultFinishedState">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedState"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.DefaultInitialExtraImage">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InitialExtraImage"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.DefaultInProgressExtraImage">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.InProgressExtraImage"/>.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.DefaultFinishedExtraImage">
+            <summary>
+            Gets the default value for <see cref="P:ExtendedPictureBoxLib.AnimatedPicturesProgressBar.FinishedExtraImage"/>.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.BaseSizeMode">
+            <summary>
+            Enumeration holding the modes how the 100% zoom size
+            is calculated in an <see cref="T:ExtendedPictureBoxLib.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.BaseSizeMode.Normal">
+            <summary>
+            Size is calculated so that the image fits into the view given normal orientation.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.BaseSizeMode.Enhanced">
+            <summary>
+            Size is calculated so that the image always fits into the view no matter of the rotation.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.BaseSizeMode.Original">
+            <summary>
+            A <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.Zoom"/> of 100 will show the image in its original size in this mode.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.ShadowMode">
+            <summary>
+            Enumeration holding the modes how the shadow position of
+            the main image is calculated in an <see cref="T:ExtendedPictureBoxLib.ExtendedPictureBox"/>.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.ShadowMode.Off">
+            <summary>
+            No shadow.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.ShadowMode.OffsetFromImage">
+            <summary>
+            Shadow offset is calculated from the actual image position
+            which includes the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ImageOffset"/>.
+            The offset is given in pixels.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.ShadowMode.OffsetFromImagePercent">
+            <summary>
+            Shadow offset is calculated from the actual image position
+            which includes the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ImageOffset"/>.
+            The offset is given in percent of the image size.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.ShadowMode.OffsetFromCenter">
+            <summary>
+            Shadow offset is calculated from the actual image position
+            which doesn't include the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ImageOffset"/>.
+            The offset is given in pixels.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.ShadowMode.OffsetFromCenterPercent">
+            <summary>
+            Shadow offset is calculated from the actual image position
+            which doesn't include the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ImageOffset"/>.
+            The offset is given in percent of the image size.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.PictureBoxStateProperties">
+            <summary>
+            Defines the properties of <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/>.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.None">
+            <summary>
+            No property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.Alpha">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.Alpha"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.RotationAngle">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.RotationAngle"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.Zoom">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.Zoom"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.ExtraImageRotationAngle">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.Zoom"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.BackColorGradientRotationAngle">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.BackColorGradientRotationAngle"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.BackColor">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.BackColor"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.BackColor2">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.BackColor2"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.ForeColor">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.ForeColor"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.TextHaloColor">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextHaloColor"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.TextHaloWidth">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextHaloWidth"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.TextRotationAngle">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextRotationAngle"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.TextZoom">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextZoom"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.ShadowOffset">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.ShadowOffset"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.ImageOffset">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.ImageOffset"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.TextOffset">
+            <summary>
+            Represents the <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextOffset"/> property.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.ImageProperties">
+            <summary>
+            Combines <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.Alpha"/>, <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.RotationAngle"/>, <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.Zoom"/>, 
+            <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.ExtraImageRotationAngle"/>, <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.ShadowOffset"/> and <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.ImageOffset"/>.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.TextProperties">
+            <summary>
+            Combines <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.TextHaloWidth"/>, <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.TextRotationAngle"/>, <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.TextZoom"/> 
+            and <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.TextOffset"/>.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.ColorProperties">
+            <summary>
+            Combines <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.BackColorGradientRotationAngle"/>, <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.BackColor"/>, 
+            <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.BackColor2"/>, <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.ForeColor"/> and <see cref="F:ExtendedPictureBoxLib.PictureBoxStateProperties.TextHaloColor"/>.
+            </summary>
+        </member>
+        <member name="F:ExtendedPictureBoxLib.PictureBoxStateProperties.All">
+            <summary>
+            All properties.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.PictureBoxState">
+            <summary>
+            Structure holding all properties of an <see cref="T:ExtendedPictureBoxLib.ExtendedPictureBox"/>
+            except the two images, the <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageAlignment"/>,
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BaseSizeMode"/> and 
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BorderStyle"/>.
+            The class encapsualtes all properties which can be animated.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.#ctor(System.Byte,System.Single,System.Single,System.Single,System.Single,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Creates a new instance and initializes it with
+            the specified values.
+            </summary>
+            <param name="alpha">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.Alpha"/> value.</param>
+            <param name="rotationAngle">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.RotationAngle"/> value.</param>
+            <param name="zoom">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.Zoom"/> value.</param>
+            <param name="extraImageRotationAngle">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.ExtraImageRotationAngle"/> value.</param>
+            <param name="backColorGradientRotationAngle">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.BackColorGradientRotationAngle"/> value.</param>
+            <param name="backColor">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.BackColor"/> value.</param>
+            <param name="backColor2">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.BackColor2"/> value.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.#ctor(System.Byte,System.Single,System.Single,System.Single,System.Single,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Single,System.Single,System.Single)">
+            <summary>
+            Creates a new instance and initializes it with
+            the specified values.
+            </summary>
+            <param name="alpha">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.Alpha"/> value.</param>
+            <param name="rotationAngle">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.RotationAngle"/> value.</param>
+            <param name="zoom">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.Zoom"/> value.</param>
+            <param name="extraImageRotationAngle">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.ExtraImageRotationAngle"/> value.</param>
+            <param name="backColorGradientRotationAngle">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.BackColorGradientRotationAngle"/> value.</param>
+            <param name="backColor">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.BackColor"/> value.</param>
+            <param name="backColor2">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.BackColor2"/> value.</param>
+            <param name="foreColor">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.ForeColor"/> value.</param>
+            <param name="textHaloColor">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextHaloColor"/> value.</param>
+            <param name="textHaloWidth">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextHaloWidth"/> value.</param>
+            <param name="textRotationAngle">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextRotationAngle"/> value.</param>
+            <param name="textZoom">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextZoom"/> value.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.#ctor(System.Byte,System.Single,System.Single,System.Single,System.Single,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Single,System.Single,System.Single,System.Drawing.Point,System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Creates a new instance and initializes it with
+            the specified values.
+            </summary>
+            <param name="alpha">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.Alpha"/> value.</param>
+            <param name="rotationAngle">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.RotationAngle"/> value.</param>
+            <param name="zoom">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.Zoom"/> value.</param>
+            <param name="extraImageRotationAngle">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.ExtraImageRotationAngle"/> value.</param>
+            <param name="backColorGradientRotationAngle">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.BackColorGradientRotationAngle"/> value.</param>
+            <param name="backColor">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.BackColor"/> value.</param>
+            <param name="backColor2">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.BackColor2"/> value.</param>
+            <param name="foreColor">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.ForeColor"/> value.</param>
+            <param name="textHaloColor">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextHaloColor"/> value.</param>
+            <param name="textHaloWidth">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextHaloWidth"/> value.</param>
+            <param name="textRotationAngle">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextRotationAngle"/> value.</param>
+            <param name="textZoom">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextZoom"/> value.</param>
+            <param name="shadowOffset">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.ShadowOffset"/> value.</param>
+            <param name="imageOffset">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.ImageOffset"/> value.</param>
+            <param name="textOffset">The initial <see cref="P:ExtendedPictureBoxLib.PictureBoxState.TextOffset"/> value.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.Apply(ExtendedPictureBoxLib.PictureBoxState,ExtendedPictureBoxLib.PictureBoxStateProperties)">
+            <summary>
+            Applies the a defined set of properties from a given state to
+            the current instance.
+            </summary>
+            <param name="state">State from which to transfer the properties.</param>
+            <param name="properties">Definition of which properties to transfer.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.IsPropertySet(ExtendedPictureBoxLib.PictureBoxStateProperties,ExtendedPictureBoxLib.PictureBoxStateProperties)">
+            <summary>
+            Checks whether one <see cref="T:ExtendedPictureBoxLib.PictureBoxStateProperties"/> is part of
+            another one.
+            </summary>
+            <param name="allProperties"></param>
+            <param name="testProperty"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.GetRandomState">
+            <summary>
+            Creates a new <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/> with random properties.
+            </summary>
+            <returns>A random <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/>.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.GetRandomPoint(System.Int32)">
+            <summary>
+            Creates a random <see cref="T:System.Drawing.Point"/>.
+            </summary>
+            <returns>A random <see cref="T:System.Drawing.Point"/>.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.GetRandomAngle">
+            <summary>
+            Creates a new random <see cref="T:System.Single"/> which can be used in
+            any of the angle properties of an <see cref="T:ExtendedPictureBoxLib.ExtendedPictureBox"/>.
+            </summary>
+            <returns>A random angle between 0 and 359.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.GetRandomColor">
+            <summary>
+            Creates a random color.
+            </summary>
+            <returns>A random color.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.op_Equality(ExtendedPictureBoxLib.PictureBoxState,ExtendedPictureBoxLib.PictureBoxState)">
+            <summary>
+            Defines the '==' operator for <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/> instances.
+            </summary>
+            <param name="state1">The first state.</param>
+            <param name="state2">The second state.</param>
+            <returns>True if all properties have the same values, otherwise false.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.op_Inequality(ExtendedPictureBoxLib.PictureBoxState,ExtendedPictureBoxLib.PictureBoxState)">
+            <summary>
+            Defines the '!=' operator for <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/> instances.
+            </summary>
+            <param name="state1">The first state.</param>
+            <param name="state2">The second state.</param>
+            <returns>Returns true if at least one property is different, otherwise false.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.GetHashCode">
+            <summary>
+            Gets a hash code for this instance.
+            </summary>
+            <returns>A hash code.</returns>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.PictureBoxState.Equals(System.Object)">
+            <summary>
+            Determines whether this instance and another value
+            are equal.
+            </summary>
+            <param name="obj">Another object.</param>
+            <returns>True if obj is of type <see cref="T:ExtendedPictureBoxLib.PictureBoxState"/> and all properties are equal.</returns>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.Alpha">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.Alpha"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.RotationAngle">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.RotationAngle"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.Zoom">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.Zoom"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.ExtraImageRotationAngle">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ExtraImageRotationAngle"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.BackColorGradientRotationAngle">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColorGradientRotationAngle"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.BackColor">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.BackColor2">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.BackColor2"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.ForeColor">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:System.Windows.Forms.Control.ForeColor"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.TextHaloColor">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloColor"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.TextHaloWidth">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextHaloWidth"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.TextRotationAngle">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextRotationAngle"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.TextZoom">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextZoom"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.ShadowOffset">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ShadowOffset"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.ImageOffset">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.ImageOffset"/> property.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.PictureBoxState.TextOffset">
+            <summary>
+            Gets or sets the value for the
+            <see cref="P:ExtendedPictureBoxLib.ExtendedPictureBox.TextOffset"/> property.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.ProgressStep">
+            <summary>
+            Class describing on step in a <see cref="T:ExtendedPictureBoxLib.AnimatedPicturesProgressBar"/>.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ProgressStep.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ProgressStep.#ctor(System.Drawing.Image,System.String,System.String,System.String)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="image">Image applied to the step.</param>
+            <param name="name">Name applied to the step.</param>
+            <param name="text">Text applied to the step.</param>
+            <param name="description">Description applied to the step.</param>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ProgressStep.Image">
+            <summary>
+            Gets or sets the image applied to the step.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ProgressStep.Name">
+            <summary>
+            Gets or sets the name applied to the step.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ProgressStep.Text">
+            <summary>
+            Gets or sets the text applied to the step.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ProgressStep.Description">
+            <summary>
+            Gets or sets the description applied to the step.
+            The <see cref="T:ExtendedPictureBoxLib.AnimatedPicturesProgressBar"/> will replace some
+            keywords before showing the description anyhwere.
+            The replacements are the following:
+            {0} -&gt; Name of the step.
+            {1} -&gt; Index of the step.
+            {2} -&gt; Total number of steps.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.ProgressStepCollection">
+            <summary>
+            A typesafe collection class for <see cref="T:ExtendedPictureBoxLib.ProgressStep"/> instances.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ProgressStepCollection.#ctor">
+            <summary>
+            Creats a new empty instance.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ProgressStepCollection.Add(ExtendedPictureBoxLib.ProgressStep)">
+            <summary>
+            Adds a <see cref="T:ExtendedPictureBoxLib.ProgressStep"/> to the end of the collection.
+            </summary>
+            <param name="progressStep">Step to be added.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.ProgressStepCollection.Remove(ExtendedPictureBoxLib.ProgressStep)">
+            <summary>
+            Removes a <see cref="T:ExtendedPictureBoxLib.ProgressStep"/> from the collection.
+            </summary>
+            <param name="progressStep">Step to be removed.</param>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.ProgressStepCollection.Item(System.Int32)">
+            <summary>
+            Gets a <see cref="T:ExtendedPictureBoxLib.ProgressStep"/> from a specified position.
+            </summary>
+        </member>
+        <member name="T:ExtendedPictureBoxLib.StepAnimators">
+            <summary>
+            Helper class for the <see cref="T:ExtendedPictureBoxLib.AnimatedPicturesProgressBar"/> managing the
+            animations while a step is in progress.
+            This is done by removing some of the animation capabilities of the underlying
+            <see cref="T:ExtendedPictureBoxLib.AnimatedPictureBox"/> and instead adding some repeating animations.
+            </summary>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.StepAnimators.#ctor(System.Boolean,System.Boolean,System.Drawing.Color,System.Drawing.Color,ExtendedPictureBoxLib.AnimatedPictureBox)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="animateExtraImageRotationAngle">Indicates whether the the extra image should be rotated.</param>
+            <param name="animateColor">Indicates whether the colors should be animated.</param>
+            <param name="color1">First color of the animation.</param>
+            <param name="color2">Second color of the animation.</param>
+            <param name="pictureBox">AnimatedPictureBox.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.StepAnimators.Start(System.Boolean,System.Boolean)">
+            <summary>
+            Starts the animation.
+            </summary>
+            <param name="animateExtraImageRotationAngle">Indicates whether the the extra image should be rotated.</param>
+            <param name="animateColor">Indicates whether the colors should be animated.</param>
+        </member>
+        <member name="M:ExtendedPictureBoxLib.StepAnimators.Stop">
+            <summary>
+            Stops the animation.
+            </summary>
+        </member>
+        <member name="P:ExtendedPictureBoxLib.StepAnimators.IsAnimationRunning">
+            <summary>
+            Gets whether this instance is currently animating.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF0BB182-581E-4169-80F1-41FDA00596CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StandardWidgets</RootNamespace>
+    <AssemblyName>StarndardWidgets</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/StarndardWidgets/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Animations, Version=1.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Addon Dlls\Animations.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="ExtendedPictureBoxLib, Version=1.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Addon Dlls\ExtendedPictureBoxLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Resources, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AddOnDlls\FarsiLibrary.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AddOnDlls\FarsiLibrary.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win">
+      <HintPath>..\..\AddOnDlls\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabStrip, Version=2.0.2673.25540, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Addon Dlls\TabStrip.dll</HintPath>
+    </Reference>
+    <Reference Include="XPExplorerBar, Version=3.3.0.0, Culture=neutral, PublicKeyToken=26272737b5f33015">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Addon Dlls\XPExplorerBar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonKeeper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ButtonKeeper.Designer.cs">
+      <DependentUpon>ButtonKeeper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolAnimatedButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolAnimatedButton.Designer.cs">
+      <DependentUpon>CoolAnimatedButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboManager.cs" />
+    <Compile Include="CoolBaseFormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoolBaseFormReport.Designer.cs">
+      <DependentUpon>CoolBaseFormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolBaseFormSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoolBaseFormSimple.Designer.cs">
+      <DependentUpon>CoolBaseFormSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolButton.Designer.cs">
+      <DependentUpon>CoolButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolCheckBox.Designer.cs">
+      <DependentUpon>CoolCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolComboBox.Designer.cs">
+      <DependentUpon>CoolComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolDateBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolDateBox.Designer.cs">
+      <DependentUpon>CoolDateBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolBaseFormTableEditorLarge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoolBaseFormTableEditorLarge.Designer.cs">
+      <DependentUpon>CoolBaseFormTableEditorLarge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolTextBoxMultiLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolTextBoxMultiLine.Designer.cs">
+      <DependentUpon>CoolTextBoxMultiLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\CoolMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\CoolMainForm.designer.cs">
+      <DependentUpon>CoolMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\CoolMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainForm\CoolMenu.designer.cs">
+      <DependentUpon>CoolMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\CoolTitleBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainForm\CoolTitleBar.designer.cs">
+      <DependentUpon>CoolTitleBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeekTimePicker\CoolDayTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WeekTimePicker\CoolDayTimePicker.Designer.cs">
+      <DependentUpon>CoolDayTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolImageBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolImageBox.Designer.cs">
+      <DependentUpon>CoolImageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolLabel.Designer.cs">
+      <DependentUpon>CoolLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolMessage.Designer.cs">
+      <DependentUpon>CoolMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolNumberBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolNumberBox.Designer.cs">
+      <DependentUpon>CoolNumberBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolOrderBySelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolOrderBySelector.Designer.cs">
+      <DependentUpon>CoolOrderBySelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolTextBox.Designer.cs">
+      <DependentUpon>CoolTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolTimeBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolTimeBox.Designer.cs">
+      <DependentUpon>CoolTimeBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeekTimePicker\CoolTimeSlot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WeekTimePicker\CoolTimeSlot.Designer.cs">
+      <DependentUpon>CoolTimeSlot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolValidatorTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolValidatorTextBox.Designer.cs">
+      <DependentUpon>CoolValidatorTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeekTimePicker\CoolWeekTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WeekTimePicker\CoolWeekTimePicker.Designer.cs">
+      <DependentUpon>CoolWeekTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseSchema.cs" />
+    <Compile Include="CoolDatagrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolDatagrid.Designer.cs">
+      <DependentUpon>CoolDatagrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolNumberFloatBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolNumberFloatBox.Designer.cs">
+      <DependentUpon>CoolNumberFloatBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolBaseFormTableEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoolBaseFormTableEditor.Designer.cs">
+      <DependentUpon>CoolBaseFormTableEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFloatable.cs" />
+    <Compile Include="PanelFloater.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelFloater.Designer.cs">
+      <DependentUpon>PanelFloater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CoolYearBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolYearBox.Designer.cs">
+      <DependentUpon>CoolYearBox.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ButtonKeeper.resx">
+      <DependentUpon>ButtonKeeper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolAnimatedButton.resx">
+      <DependentUpon>CoolAnimatedButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolBaseFormReport.resx">
+      <DependentUpon>CoolBaseFormReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolBaseFormSimple.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoolBaseFormSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolButton.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoolButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolCheckBox.resx">
+      <DependentUpon>CoolCheckBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolComboBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoolComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolDatagrid.fa-IR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoolDatagrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolDatagrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoolDatagrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolDateBox.fa-IR.resx">
+      <DependentUpon>CoolDateBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolDateBox.fa.resx">
+      <DependentUpon>CoolDateBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolDateBox.resx">
+      <DependentUpon>CoolDateBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolBaseFormTableEditorLarge.resx">
+      <DependentUpon>CoolBaseFormTableEditorLarge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolTextBoxMultiLine.resx">
+      <DependentUpon>CoolTextBoxMultiLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\CoolMainForm.resx">
+      <DependentUpon>CoolMainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\CoolMenu.resx">
+      <DependentUpon>CoolMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\CoolTitleBar.resx">
+      <DependentUpon>CoolTitleBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeekTimePicker\CoolDayTimePicker.resx">
+      <DependentUpon>CoolDayTimePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolImageBox.resx">
+      <DependentUpon>CoolImageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolLabel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoolLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolMessage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoolMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolNumberFloatBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoolNumberFloatBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolOrderBySelector.resx">
+      <DependentUpon>CoolOrderBySelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolTextBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoolTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolTimeBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoolTimeBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeekTimePicker\CoolTimeSlot.resx">
+      <DependentUpon>CoolTimeSlot.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolValidatorTextBox.fa-IR.resx">
+      <DependentUpon>CoolValidatorTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolValidatorTextBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoolValidatorTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolBaseFormTableEditor.resx">
+      <DependentUpon>CoolBaseFormTableEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeekTimePicker\CoolWeekTimePicker.resx">
+      <DependentUpon>CoolWeekTimePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelFloater.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PanelFloater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolYearBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoolYearBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Graphix\ok.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graphix\Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Graphix\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

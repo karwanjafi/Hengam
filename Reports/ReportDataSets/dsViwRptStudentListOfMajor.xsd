@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsViwRptStudentListOfMajor" targetNamespace="http://tempuri.org/dsViwRptStudentListOfMajor.xsd" xmlns:mstns="http://tempuri.org/dsViwRptStudentListOfMajor.xsd" xmlns="http://tempuri.org/dsViwRptStudentListOfMajor.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HengamConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HengamConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Hengam.Properties.Settings.GlobalReference.Default.HengamConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsViwRptStudentListOfMajor" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsViwRptStudentListOfMajor" msprop:Generator_DataSetName="dsViwRptStudentListOfMajor" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="viwRptStudentListOfMajor" msprop:Generator_UserTableName="viwRptStudentListOfMajor" msprop:Generator_RowDeletedName="viwRptStudentListOfMajorRowDeleted" msprop:Generator_RowChangedName="viwRptStudentListOfMajorRowChanged" msprop:Generator_RowClassName="viwRptStudentListOfMajorRow" msprop:Generator_RowChangingName="viwRptStudentListOfMajorRowChanging" msprop:Generator_RowEvArgName="viwRptStudentListOfMajorRowChangeEvent" msprop:Generator_RowEvHandlerName="viwRptStudentListOfMajorRowChangeEventHandler" msprop:Generator_TableClassName="viwRptStudentListOfMajorDataTable" msprop:Generator_TableVarName="tableviwRptStudentListOfMajor" msprop:Generator_RowDeletingName="viwRptStudentListOfMajorRowDeleting" msprop:Generator_TablePropName="viwRptStudentListOfMajor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="studentID" msprop:Generator_UserColumnName="studentID" msprop:Generator_ColumnVarNameInTable="columnstudentID" msprop:Generator_ColumnPropNameInRow="studentID" msprop:Generator_ColumnPropNameInTable="studentIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="firstName" msprop:Generator_UserColumnName="firstName" msprop:Generator_ColumnVarNameInTable="columnfirstName" msprop:Generator_ColumnPropNameInRow="firstName" msprop:Generator_ColumnPropNameInTable="firstNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lastName" msprop:Generator_UserColumnName="lastName" msprop:Generator_ColumnVarNameInTable="columnlastName" msprop:Generator_ColumnPropNameInRow="lastName" msprop:Generator_ColumnPropNameInTable="lastNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="teacherName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="teacherName" msprop:Generator_ColumnVarNameInTable="columnteacherName" msprop:Generator_ColumnPropNameInRow="teacherName" msprop:Generator_ColumnPropNameInTable="teacherNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="registrationDate" msprop:Generator_UserColumnName="registrationDate" msprop:Generator_ColumnVarNameInTable="columnregistrationDate" msprop:Generator_ColumnPropNameInRow="registrationDate" msprop:Generator_ColumnPropNameInTable="registrationDateColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sessionCount" msprop:Generator_UserColumnName="sessionCount" msprop:Generator_ColumnVarNameInTable="columnsessionCount" msprop:Generator_ColumnPropNameInRow="sessionCount" msprop:Generator_ColumnPropNameInTable="sessionCountColumn" type="xs:int" />
+              <xs:element name="classID" msprop:Generator_UserColumnName="classID" msprop:Generator_ColumnVarNameInTable="columnclassID" msprop:Generator_ColumnPropNameInRow="classID" msprop:Generator_ColumnPropNameInTable="classIDColumn" type="xs:int" />
+              <xs:element name="className" msprop:Generator_UserColumnName="className" msprop:Generator_ColumnVarNameInTable="columnclassName" msprop:Generator_ColumnPropNameInRow="className" msprop:Generator_ColumnPropNameInTable="classNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="majorID" msprop:Generator_UserColumnName="majorID" msprop:Generator_ColumnVarNameInTable="columnmajorID" msprop:Generator_ColumnPropNameInRow="majorID" msprop:Generator_ColumnPropNameInTable="majorIDColumn" type="xs:int" />
+              <xs:element name="majorName" msprop:Generator_UserColumnName="majorName" msprop:Generator_ColumnVarNameInTable="columnmajorName" msprop:Generator_ColumnPropNameInRow="majorName" msprop:Generator_ColumnPropNameInTable="majorNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,937 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Animations</name>
+    </assembly>
+    <members>
+        <member name="T:Animations.SynchronizationMode">
+            <summary>
+            Enumeration holding modes for design time support of <see cref="T:Animations.AnimatorBase"/>
+            and its inheriting classes.
+            </summary>
+        </member>
+        <member name="F:Animations.SynchronizationMode.None">
+            <summary>
+            No synchronization.
+            </summary>
+        </member>
+        <member name="F:Animations.SynchronizationMode.Start">
+            <summary>
+            Synchronize designer value with starting values.
+            </summary>
+        </member>
+        <member name="F:Animations.SynchronizationMode.End">
+            <summary>
+            Synchronize designer value with ending values.
+            </summary>
+        </member>
+        <member name="F:Animations.SynchronizationMode.ResetToCurrent">
+            <summary>
+            Reset starting and ending value to current value.
+            </summary>
+        </member>
+        <member name="T:Animations.LoopMode">
+            <summary>
+            Ernumeration holding the possible modes for looping an animation.
+            </summary>
+        </member>
+        <member name="F:Animations.LoopMode.None">
+            <summary>
+            No looping (animation stops after reaching end value).
+            </summary>
+        </member>
+        <member name="F:Animations.LoopMode.Repeat">
+            <summary>
+            Animation gets restarted everytime the end value is reached.
+            </summary>
+        </member>
+        <member name="F:Animations.LoopMode.Bidirectional">
+            <summary>
+            The animation loops continueously back and forth between start and endvalue.
+            </summary>
+        </member>
+        <member name="T:Animations.AnimatorBase">
+            <summary>
+            Abstract base class for all components animating something.
+            It holds a <see cref="T:System.Timers.Timer"/> to control the
+            animation.
+            Implementing classes must override the following:
+            <see cref="P:Animations.AnimatorBase.StartValue"/>: Getter and setter for concrete starting value of the animation.
+            <see cref="P:Animations.AnimatorBase.EndValue"/>: Getter and setter for concrete ending value of the animation.
+            <see cref="P:Animations.AnimatorBase.CurrentValue"/>: Getter and setter for concrete value currently showing.
+            <see cref="M:Animations.AnimatorBase.GetValueForStep(System.Double)"/>: Function calculating the value for a single animation step.
+            All handled values must always be of the same type.
+            Moreover every inheriting class must have two constructors having
+            the same signature as the constructors provided here.
+            </summary>
+        </member>
+        <member name="F:Animations.AnimatorBase.DEFAULT_STEP_SIZE">
+            <summary>
+            The default value for the <see cref="P:Animations.AnimatorBase.StepSize"/> property.
+            </summary>
+        </member>
+        <member name="F:Animations.AnimatorBase.DEFAULT_INTERVALL">
+            <summary>
+            The default value for the <see cref="P:Animations.AnimatorBase.Intervall"/> property.
+            </summary>
+        </member>
+        <member name="F:Animations.AnimatorBase.DEFAULT_LOOP_ANIMATION">
+            <summary>
+            The default value for the <see cref="P:Animations.AnimatorBase.LoopMode"/> property.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Base constructor.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.#ctor">
+            <summary>
+            Base constructor.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.InitializeComponent">
+            <summary>
+            Erforderliche Methode für die Designerunterstützung. 
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.Dispose(System.Boolean)">
+            <summary>
+            Frees used resources.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Animations.AnimatorBase.Continue">
+            <summary>
+            Continues the animation.
+            If the animation finished normally (without call to <see cref="M:Animations.AnimatorBase.Stop"/>)
+            than a call to this function will not have any effect.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.Start(System.Object)">
+            <summary>
+            Sets the <see cref="P:Animations.AnimatorBase.StartValue"/> to the
+            <see cref="P:Animations.AnimatorBase.CurrentValue"/>, sets the given
+            value to <see cref="P:Animations.AnimatorBase.EndValue"/> and starts the animation.
+            </summary>
+            <param name="endValue">new end value for the animation.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.Start">
+            <summary>
+            Sets <see cref="P:Animations.AnimatorBase.StartValue"/> to
+            <see cref="P:Animations.AnimatorBase.CurrentValue"/> and starts the animation.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.Start(System.Boolean)">
+            <summary>
+            Optionally sets <see cref="P:Animations.AnimatorBase.StartValue"/> to
+            <see cref="P:Animations.AnimatorBase.CurrentValue"/> and starts the animation.
+            </summary>
+            <param name="setStartValuesToCurrentValues">Indicates whether the start value
+            should be changed prior to starting the animation.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.SetCurrentValuesToStartValues">
+            <summary>
+            Sets <see cref="P:Animations.AnimatorBase.CurrentValue"/> to the value of <see cref="P:Animations.AnimatorBase.StartValue"/>
+            for this instance and all registered childs.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.SetStartValuesToCurrentValue">
+            <summary>
+            Sets <see cref="P:Animations.AnimatorBase.StartValue"/> to the value of <see cref="P:Animations.AnimatorBase.CurrentValue"/>
+            for this instance and all registered childs.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.SwitchStartEndValues">
+            <summary>
+            Sets <see cref="P:Animations.AnimatorBase.StartValue"/> to the value of <see cref="P:Animations.AnimatorBase.EndValue"/>
+            and vice versa for this instance and all registered childs.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.Stop">
+            <summary>
+            Stops the animation.
+            If no animation is running nothing happens.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.SynchronizeToSource">
+            <summary>
+            Changes <see cref="P:Animations.AnimatorBase.StartValue"/>, <see cref="P:Animations.AnimatorBase.EndValue"/>
+            or <see cref="P:Animations.AnimatorBase.CurrentValue"/> accordingly to the
+            current <see cref="P:Animations.AnimatorBase.SynchronizationMode"/>.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.SynchronizeFromSource">
+            <summary>
+            Sets <see cref="P:Animations.AnimatorBase.StartValue"/> or <see cref="P:Animations.AnimatorBase.EndValue"/>
+            to <see cref="P:Animations.AnimatorBase.CurrentValue"/> depending on the currently
+            set <see cref="P:Animations.AnimatorBase.SynchronizationMode"/>.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.ResetValues">
+            <summary>
+            Sets <see cref="P:Animations.AnimatorBase.StartValue"/> and <see cref="P:Animations.AnimatorBase.EndValue"/>
+            to <see cref="P:Animations.AnimatorBase.CurrentValue"/>.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.OnAnimationStarted(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Animations.AnimatorBase.AnimationStarted"/> event.
+            </summary>
+            <param name="eventArgs">Event data.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.OnAnimationContinued(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Animations.AnimatorBase.AnimationContinued"/> event.
+            </summary>
+            <param name="eventArgs">Event data.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.OnAnimationStopped(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Animations.AnimatorBase.AnimationStopped"/> event.
+            </summary>
+            <param name="eventArgs">Event data.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.OnAnimationFinished(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Animations.AnimatorBase.AnimationFinished"/> event.
+            </summary>
+            <param name="eventArgs">Event data.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.OnLoopAnimationChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Animations.AnimatorBase.LoopAnimationChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event data.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.OnStepSizeChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Animations.AnimatorBase.StepSizeChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event data.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.OnIntervallChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Animations.AnimatorBase.IntervallChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event data.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.OnSynchronizationModeChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Animations.AnimatorBase.SynchronizationModeChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event data.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.OnCurrentStepChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Animations.AnimatorBase.CurrentStepChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event data.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.OnStartValueChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Animations.AnimatorBase.StartValueChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event data.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.OnEndValueChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Animations.AnimatorBase.EndValueChanged"/> event.
+            </summary>
+            <param name="eventArgs">Event data.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:Animations.AnimatorBase.StartValue"/> and
+            <see cref="P:Animations.AnimatorBase.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:Animations.AnimatorBase.StartValue"/>.
+            Giving 100 will return the <see cref="P:Animations.AnimatorBase.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="M:Animations.AnimatorBase.AddChildAnimator(Animations.AnimatorBase)">
+            <summary>
+            Adds an <see cref="T:Animations.AnimatorBase"/> which acts as a child of this instance.
+            Thus its <see cref="P:Animations.AnimatorBase.Intervall"/>, <see cref="P:Animations.AnimatorBase.StepSize"/>, <see cref="P:Animations.AnimatorBase.LoopMode"/>
+            and <see cref="P:Animations.AnimatorBase.SynchronizationMode"/> will be set accordingly to and synchronized 
+            with the settings of this instance.
+            </summary>
+            <param name="animator">Child to add.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.RemoveChildAnimator(Animations.AnimatorBase)">
+            <summary>
+            Removes an <see cref="T:Animations.AnimatorBase"/> which acts as a child of this instance.
+            </summary>
+            <param name="animator">Child to be removed.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.ShouldSerializeSynchronizationMode">
+            <summary>
+            Indicates the designer whether <see cref="P:Animations.AnimatorBase.SynchronizationMode"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.OnCurrentValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Should be called by inheriting classes whenever the current
+            value of whatever they animated changes. This ensures optimal
+            design time support.
+            </summary>
+            <param name="sender">Sender of the notification.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Animations.AnimatorBase.InterpolateColors(System.Drawing.Color,System.Drawing.Color,System.Double)">
+            <summary>
+            Interpolates two <see cref="T:System.Drawing.Color"/> instances.
+            </summary>
+            <param name="color1">First color.</param>
+            <param name="color2">Second color.</param>
+            <param name="percent">Value ranging from 0 to 100 indicating how big the part
+            of the two colors is in the result.</param>
+            <returns>If percent is 0 then color1. If percent is 100 then color2. For 
+            everything else an interpolated color is returned.</returns>
+        </member>
+        <member name="M:Animations.AnimatorBase.InterpolateRectangles(System.Drawing.Rectangle,System.Drawing.Rectangle,System.Double)">
+            <summary>
+            Interpolates two <see cref="T:System.Drawing.Rectangle"/> instances.
+            </summary>
+            <param name="rectangle1">First rectangle.</param>
+            <param name="rectangle2">Second rectangle.</param>
+            <param name="percent">Value ranging from 0 to 100 indicating how big the part
+            of the two rectangles is in the result.</param>
+            <returns>If percent is 0 then rectangle1. If percent is 100 then rectangle2. For 
+            everything else an interpolated rectangle is returned.</returns>
+        </member>
+        <member name="M:Animations.AnimatorBase.InterpolatePoints(System.Drawing.Point,System.Drawing.Point,System.Double)">
+            <summary>
+            Interpolates two <see cref="T:System.Drawing.Point"/> instances.
+            </summary>
+            <param name="point1">First point.</param>
+            <param name="point2">Second point.</param>
+            <param name="percent">Value ranging from 0 to 100 indicating how big the part
+            of the two points is in the result.</param>
+            <returns>If percent is 0 then point1. If percent is 100 then point2. For 
+            everything else an interpolated point is returned.</returns>
+        </member>
+        <member name="M:Animations.AnimatorBase.InterpolateSizes(System.Drawing.Size,System.Drawing.Size,System.Double)">
+            <summary>
+            Interpolates two <see cref="T:System.Drawing.Size"/> instances.
+            </summary>
+            <param name="size1">First size.</param>
+            <param name="size2">Second size.</param>
+            <param name="percent">Value ranging from 0 to 100 indicating how big the part
+            of the two sizes is in the result.</param>
+            <returns>If percent is 0 then size1. If percent is 100 then size2. For 
+            everything else an interpolated size is returned.</returns>
+        </member>
+        <member name="M:Animations.AnimatorBase.InterpolateDoubleValues(System.Double,System.Double,System.Double)">
+            <summary>
+            Interpolates two <see cref="T:System.Double"/> values.
+            </summary>
+            <param name="value1">First value.</param>
+            <param name="value2">Second value.</param>
+            <param name="percent">Value ranging from 0 to 100 indicating how big the part
+            of the two values is in the result.</param>
+            <returns>If percent is 0 then value1. If percent is 100 then value2. For 
+            everything else an interpolated value is returned.</returns>
+        </member>
+        <member name="M:Animations.AnimatorBase.InterpolateIntegerValues(System.Int32,System.Int32,System.Double)">
+            <summary>
+            Interpolates two <see cref="T:System.Int32"/> values.
+            </summary>
+            <param name="value1">First value.</param>
+            <param name="value2">Second value.</param>
+            <param name="percent">Value ranging from 0 to 100 indicating how big the part
+            of the two values is in the result.</param>
+            <returns>If percent is 0 then value1. If percent is 100 then value2. For 
+            everything else an interpolated value is returned.</returns>
+        </member>
+        <member name="M:Animations.AnimatorBase.BeginInit">
+            <summary>
+            Signals the object that initialization is starting.
+            </summary>
+        </member>
+        <member name="M:Animations.AnimatorBase.EndInit">
+            <summary>
+            Signals the object that initialization is complete.
+            </summary>
+        </member>
+        <member name="E:Animations.AnimatorBase.AnimationStarted">
+            <summary>
+            Event which gets fired when animation has been started with <see cref="M:Animations.AnimatorBase.Start"/>.
+            </summary>
+        </member>
+        <member name="E:Animations.AnimatorBase.AnimationStopped">
+            <summary>
+            Event which gets fired when animation has been started with <see cref="M:Animations.AnimatorBase.Stop"/>.
+            </summary>
+        </member>
+        <member name="E:Animations.AnimatorBase.AnimationContinued">
+            <summary>
+            Event which gets fired when animation has been started with <see cref="M:Animations.AnimatorBase.Continue"/>.
+            </summary>
+        </member>
+        <member name="E:Animations.AnimatorBase.AnimationFinished">
+            <summary>
+            Event which gets fired when animation has finished running.
+            </summary>
+        </member>
+        <member name="E:Animations.AnimatorBase.StepSizeChanged">
+            <summary>
+            Event which gets fired when <see cref="P:Animations.AnimatorBase.StepSize"/> has changed.
+            </summary>
+        </member>
+        <member name="E:Animations.AnimatorBase.IntervallChanged">
+            <summary>
+            Event which gets fired when <see cref="P:Animations.AnimatorBase.Intervall"/> has changed.
+            </summary>
+        </member>
+        <member name="E:Animations.AnimatorBase.CurrentStepChanged">
+            <summary>
+            Event which gets fired when <see cref="P:Animations.AnimatorBase.CurrentStep"/> has changed.
+            </summary>
+        </member>
+        <member name="E:Animations.AnimatorBase.LoopAnimationChanged">
+            <summary>
+            Event which gets fired when <see cref="P:Animations.AnimatorBase.LoopMode"/> has changed.
+            </summary>
+        </member>
+        <member name="E:Animations.AnimatorBase.StartValueChanged">
+            <summary>
+            Event which gets fired when <see cref="P:Animations.AnimatorBase.StartValue"/> has changed.
+            </summary>
+        </member>
+        <member name="E:Animations.AnimatorBase.EndValueChanged">
+            <summary>
+            Event which gets fired when <see cref="P:Animations.AnimatorBase.EndValue"/> has changed.
+            </summary>
+        </member>
+        <member name="E:Animations.AnimatorBase.SynchronizationModeChanged">
+            <summary>
+            Event which gets fired when <see cref="P:Animations.AnimatorBase.SynchronizationMode"/> has changed.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.CurrentValue">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.TriggerAnimator">
+            <summary>
+            Gets or sets the <see cref="T:Animations.AnimatorBase"/> which should trigger the animation
+            of this instance when it has finished animating.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.ParentAnimator">
+            <summary>
+            Sets the <see cref="T:Animations.AnimatorBase"/> which acts as a parent of this instance.
+            Thus the settings <see cref="P:Animations.AnimatorBase.Intervall"/>, <see cref="P:Animations.AnimatorBase.StepSize"/>, <see cref="P:Animations.AnimatorBase.LoopMode"/>
+            and <see cref="P:Animations.AnimatorBase.SynchronizationMode"/> of this instance will be set accordingly to and synchronized 
+            with the settings of this parent.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.SynchronizationMode">
+            <summary>
+            Gets or sets the mode of design time synchronization.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.Intervall">
+            <summary>
+            Gets or sets the intervall (in milliseconds) between updates to the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.StepSize">
+            <summary>
+            Gets or sets the size of each step (in %) when updating the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.LoopMode">
+            <summary>
+            Gets or sets whether the animation should loop between <see cref="P:Animations.AnimatorBase.StartValue"/>
+            and <see cref="P:Animations.AnimatorBase.EndValue"/> until <see cref="M:Animations.AnimatorBase.Stop"/> is called.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.CurrentStep">
+            <summary>
+            Gets or sets the current step (in %) of the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.IsRunning">
+            <summary>
+            Gets whether an animation is currently running.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.NeverEndingTimer">
+            <summary>
+            Gets or sets whether the internal timer should always continue running
+            even if the animation has reached its end. This can be useful when
+            the animation is frequently continued after is has finished because
+            starting and stopping the timer has a great influence on the performance.
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value (for internal usage).
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.SettingCurrentValue">
+            <summary>
+            Gets whether the control is in the process of setting 
+            the <see cref="P:Animations.AnimatorBase.CurrentValue"/> internally. 
+            </summary>
+        </member>
+        <member name="P:Animations.AnimatorBase.IsInitializing">
+            <summary>
+            Gets whether the control is in its initialization process.
+            </summary>
+        </member>
+        <member name="T:Animations.ControlBackColorAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:System.Windows.Forms.Control.BackColor"/> of a <see cref="P:Animations.ControlBackColorAnimator.Control"/>.
+            </summary>
+        </member>
+        <member name="M:Animations.ControlBackColorAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:Animations.ControlBackColorAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:Animations.ControlBackColorAnimator.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:Animations.ControlBackColorAnimator.StartValue"/> and
+            <see cref="P:Animations.ControlBackColorAnimator.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:Animations.ControlBackColorAnimator.StartValue"/>.
+            Giving 100 will return the <see cref="P:Animations.ControlBackColorAnimator.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="M:Animations.ControlBackColorAnimator.ShouldSerializeStartColor">
+            <summary>
+            Indicates the designer whether <see cref="P:Animations.ControlBackColorAnimator.StartColor"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:Animations.ControlBackColorAnimator.ShouldSerializeEndColor">
+            <summary>
+            Indicates the designer whether <see cref="P:Animations.ControlBackColorAnimator.EndColor"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBackColorAnimator.StartColor">
+            <summary>
+            Gets or sets the starting color for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBackColorAnimator.EndColor">
+            <summary>
+            Gets or sets the ending Color for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBackColorAnimator.Control">
+            <summary>
+            Gets or sets the <see cref="P:Animations.ControlBackColorAnimator.Control"/> which 
+            <see cref="P:System.Windows.Forms.Control.BackColor"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBackColorAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBackColorAnimator.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBackColorAnimator.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBackColorAnimator.DefaultStartColor">
+            <summary>
+            Gets the default value of the <see cref="P:Animations.ControlBackColorAnimator.StartColor"/> property.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBackColorAnimator.DefaultEndColor">
+            <summary>
+            Gets the default value of the <see cref="P:Animations.ControlBackColorAnimator.EndColor"/> property.
+            </summary>
+        </member>
+        <member name="T:Animations.ControlBoundsAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:System.Windows.Forms.Control.Bounds"/> of a <see cref="P:Animations.ControlBoundsAnimator.Control"/>.
+            </summary>
+        </member>
+        <member name="M:Animations.ControlBoundsAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:Animations.ControlBoundsAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:Animations.ControlBoundsAnimator.ShouldSerializeStartBounds">
+            <summary>
+            Indicates the designer whether <see cref="P:Animations.ControlBoundsAnimator.StartBounds"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:Animations.ControlBoundsAnimator.ShouldSerializeEndBounds">
+            <summary>
+            Indicates the designer whether <see cref="P:Animations.ControlBoundsAnimator.EndBounds"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:Animations.ControlBoundsAnimator.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:Animations.ControlBoundsAnimator.StartValue"/> and
+            <see cref="P:Animations.ControlBoundsAnimator.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:Animations.ControlBoundsAnimator.StartValue"/>.
+            Giving 100 will return the <see cref="P:Animations.ControlBoundsAnimator.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="M:Animations.ControlBoundsAnimator.OnCurrentValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Called whenever the current value changes. 
+            </summary>
+            <param name="sender">Sender of the notification.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="P:Animations.ControlBoundsAnimator.StartBounds">
+            <summary>
+            Gets or sets the starting bounds for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBoundsAnimator.EndBounds">
+            <summary>
+            Gets or sets the ending bounds for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBoundsAnimator.AnimateX">
+            <summary>
+            Gets or sets whether <see cref="P:System.Windows.Forms.Control.Left"/> of the 
+            <see cref="P:Animations.ControlBoundsAnimator.Control"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBoundsAnimator.AnimateY">
+            <summary>
+            Gets or sets whether <see cref="P:System.Windows.Forms.Control.Top"/> of the 
+            <see cref="P:Animations.ControlBoundsAnimator.Control"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBoundsAnimator.AnimateWidth">
+            <summary>
+            Gets or sets whether <see cref="P:System.Windows.Forms.Control.Width"/> of the 
+            <see cref="P:Animations.ControlBoundsAnimator.Control"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBoundsAnimator.AnimateHeight">
+            <summary>
+            Gets or sets whether <see cref="P:System.Windows.Forms.Control.Height"/> of the 
+            <see cref="P:Animations.ControlBoundsAnimator.Control"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBoundsAnimator.Control">
+            <summary>
+            Gets or sets the <see cref="P:Animations.ControlBoundsAnimator.Control"/> which 
+            <see cref="P:System.Windows.Forms.Control.Bounds"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBoundsAnimator.DefaultStartBounds">
+            <summary>
+            Gets the default value of the <see cref="P:Animations.ControlBoundsAnimator.StartBounds"/> property.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBoundsAnimator.DefaultEndBounds">
+            <summary>
+            Gets the default value of the <see cref="P:Animations.ControlBoundsAnimator.EndBounds"/> property.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBoundsAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBoundsAnimator.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlBoundsAnimator.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+        <member name="T:Animations.ControlForeColorAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:System.Windows.Forms.Control.ForeColor"/> of a <see cref="P:Animations.ControlForeColorAnimator.Control"/>.
+            </summary>
+        </member>
+        <member name="M:Animations.ControlForeColorAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:Animations.ControlForeColorAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:Animations.ControlForeColorAnimator.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:Animations.ControlForeColorAnimator.StartValue"/> and
+            <see cref="P:Animations.ControlForeColorAnimator.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:Animations.ControlForeColorAnimator.StartValue"/>.
+            Giving 100 will return the <see cref="P:Animations.ControlForeColorAnimator.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="M:Animations.ControlForeColorAnimator.ShouldSerializeStartColor">
+            <summary>
+            Indicates the designer whether <see cref="P:Animations.ControlForeColorAnimator.StartColor"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="M:Animations.ControlForeColorAnimator.ShouldSerializeEndColor">
+            <summary>
+            Indicates the designer whether <see cref="P:Animations.ControlForeColorAnimator.EndColor"/> needs
+            to be serialized.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlForeColorAnimator.StartColor">
+            <summary>
+            Gets or sets the starting color for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlForeColorAnimator.EndColor">
+            <summary>
+            Gets or sets the ending Color for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlForeColorAnimator.Control">
+            <summary>
+            Gets or sets the <see cref="P:Animations.ControlForeColorAnimator.Control"/> which 
+            <see cref="P:System.Windows.Forms.Control.ForeColor"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlForeColorAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlForeColorAnimator.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlForeColorAnimator.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlForeColorAnimator.DefaultStartColor">
+            <summary>
+            Gets the default value of the <see cref="P:Animations.ControlForeColorAnimator.StartColor"/> property.
+            </summary>
+        </member>
+        <member name="P:Animations.ControlForeColorAnimator.DefaultEndColor">
+            <summary>
+            Gets the default value of the <see cref="P:Animations.ControlForeColorAnimator.EndColor"/> property.
+            </summary>
+        </member>
+        <member name="T:Animations.DummyAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> which animates nothing for itself,
+            but still can be used as the controlling parent animator for other animators.
+            </summary>
+        </member>
+        <member name="M:Animations.DummyAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:Animations.DummyAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:Animations.DummyAnimator.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:Animations.DummyAnimator.StartValue"/> and
+            <see cref="P:Animations.DummyAnimator.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:Animations.DummyAnimator.StartValue"/>.
+            Giving 100 will return the <see cref="P:Animations.DummyAnimator.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="P:Animations.DummyAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:Animations.DummyAnimator.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.DummyAnimator.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+        <member name="T:Animations.FormOpacityAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:System.Windows.Forms.Form.Opacity"/> of a <see cref="P:Animations.FormOpacityAnimator.Form"/>.
+            </summary>
+        </member>
+        <member name="M:Animations.FormOpacityAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:Animations.FormOpacityAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:Animations.FormOpacityAnimator.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:Animations.FormOpacityAnimator.StartValue"/> and
+            <see cref="P:Animations.FormOpacityAnimator.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:Animations.FormOpacityAnimator.StartValue"/>.
+            Giving 100 will return the <see cref="P:Animations.FormOpacityAnimator.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="P:Animations.FormOpacityAnimator.StartOpacity">
+            <summary>
+            Gets or sets the starting opacity for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.FormOpacityAnimator.EndOpacity">
+            <summary>
+            Gets or sets the ending opacity for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.FormOpacityAnimator.Form">
+            <summary>
+            Gets or sets the <see cref="P:Animations.FormOpacityAnimator.Form"/> which 
+            <see cref="P:System.Windows.Forms.Form.Opacity"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:Animations.FormOpacityAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:Animations.FormOpacityAnimator.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.FormOpacityAnimator.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+        <member name="T:Animations.TrackBarValueAnimator">
+            <summary>
+            Class inheriting <see cref="T:Animations.AnimatorBase"/> to animate the
+            <see cref="P:System.Windows.Forms.TrackBar.Value"/> of a <see cref="P:Animations.TrackBarValueAnimator.TrackBar"/>.
+            </summary>
+        </member>
+        <member name="M:Animations.TrackBarValueAnimator.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="container">Container the new instance should be added to.</param>
+        </member>
+        <member name="M:Animations.TrackBarValueAnimator.#ctor">
+            <summary>
+            Creates a new instance.
+            </summary>
+        </member>
+        <member name="M:Animations.TrackBarValueAnimator.GetValueForStep(System.Double)">
+            <summary>
+            Calculates an interpolated value between <see cref="P:Animations.TrackBarValueAnimator.StartValue"/> and
+            <see cref="P:Animations.TrackBarValueAnimator.EndValue"/> for a given step in %.
+            Giving 0 will return the <see cref="P:Animations.TrackBarValueAnimator.StartValue"/>.
+            Giving 100 will return the <see cref="P:Animations.TrackBarValueAnimator.EndValue"/>.
+            </summary>
+            <param name="step">Animation step in %</param>
+            <returns>Interpolated value for the given step.</returns>
+        </member>
+        <member name="M:Animations.TrackBarValueAnimator.OnCurrentValueChanged(System.Object,System.EventArgs)">
+            <summary>
+            Called whenever the current value changes. 
+            </summary>
+            <param name="sender">Sender of the notification.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="P:Animations.TrackBarValueAnimator.StartTrackBarValue">
+            <summary>
+            Gets or sets the starting Value for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.TrackBarValueAnimator.EndTrackBarValue">
+            <summary>
+            Gets or sets the ending Value for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.TrackBarValueAnimator.TrackBar">
+            <summary>
+            Gets or sets the <see cref="P:Animations.TrackBarValueAnimator.TrackBar"/> which 
+            <see cref="P:System.Windows.Forms.TrackBar.Value"/> should be animated.
+            </summary>
+        </member>
+        <member name="P:Animations.TrackBarValueAnimator.CurrentValueInternal">
+            <summary>
+            Gets or sets the currently shown value.
+            </summary>
+        </member>
+        <member name="P:Animations.TrackBarValueAnimator.StartValue">
+            <summary>
+            Gets or sets the starting value for the animation.
+            </summary>
+        </member>
+        <member name="P:Animations.TrackBarValueAnimator.EndValue">
+            <summary>
+            Gets or sets the ending value for the animation.
+            </summary>
+        </member>
+    </members>
+</doc>

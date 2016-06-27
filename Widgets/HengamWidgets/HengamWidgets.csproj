@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1550ECC3-69F1-425B-AA52-B1F1B1376B4E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HengamWidgets</RootNamespace>
+    <AssemblyName>HengamWidgets</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Animations">
+      <HintPath>..\..\AddOnDlls\Animations.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="ExtendedPictureBoxLib">
+      <HintPath>..\..\AddOnDlls\ExtendedPictureBoxLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="FarsiLibrary.Win, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabStrip, Version=2.0.2523.29272, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="XPExplorerBar, Version=3.3.0.0, Culture=neutral, PublicKeyToken=26272737b5f33015" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBaseMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaseMain.Designer.cs">
+      <DependentUpon>FormBaseMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBaseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaseReport.Designer.cs">
+      <DependentUpon>FormBaseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolCheckBox.Designer.cs">
+      <DependentUpon>CoolCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolComboBox.Designer.cs">
+      <DependentUpon>CoolComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolDataGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolDataGrid.Designer.cs">
+      <DependentUpon>CoolDataGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolDateBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolDateBox.Designer.cs">
+      <DependentUpon>CoolDateBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolImageContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolImageContainer.Designer.cs">
+      <DependentUpon>CoolImageContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolMessage.Designer.cs">
+      <DependentUpon>CoolMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolNumberBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolNumberBox.Designer.cs">
+      <DependentUpon>CoolNumberBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolNumberFloatBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolNumberFloatBox.Designer.cs">
+      <DependentUpon>CoolNumberFloatBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolOrderbySelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolOrderbySelector.Designer.cs">
+      <DependentUpon>CoolOrderbySelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolTimeBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolTimeBox.Designer.cs">
+      <DependentUpon>CoolTimeBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolYearBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolYearBox.Designer.cs">
+      <DependentUpon>CoolYearBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBaseSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaseSimple.Designer.cs">
+      <DependentUpon>FormBaseSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBaseTableEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaseTableEditor.Designer.cs">
+      <DependentUpon>FormBaseTableEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolButton.Designer.cs">
+      <DependentUpon>CoolButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolLabel.Designer.cs">
+      <DependentUpon>CoolLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoolTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoolTextBox.Designer.cs">
+      <DependentUpon>CoolTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelFloater.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelFloater.Designer.cs">
+      <DependentUpon>PanelFloater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormBaseReport.resx">
+      <DependentUpon>FormBaseReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolButton.resx">
+      <DependentUpon>CoolButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolCheckBox.resx">
+      <DependentUpon>CoolCheckBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolDataGrid.resx">
+      <DependentUpon>CoolDataGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolLabel.resx">
+      <DependentUpon>CoolLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoolMessage.resx">
+      <DependentUpon>CoolMessage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBaseSimple.resx">
+      <DependentUpon>FormBaseSimple.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBaseTableEditor.resx">
+      <DependentUpon>FormBaseTableEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelFloater.resx">
+      <DependentUpon>PanelFloater.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StarndardWidgets\StarndardWidgets.csproj">
+      <Project>{DF0BB182-581E-4169-80F1-41FDA00596CC}</Project>
+      <Name>StarndardWidgets</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
